@@ -1,0 +1,126 @@
+body {
+	//background-color: black;
+	height: 100%;
+}
+.collectionsPage {
+	.breadcrumb {
+		display: none;
+	}
+	background-image: url("/preorder/images/bg_collections.jpg");
+    background-position-x: center;
+	background-position-y: 56px;
+	background-size: 1916px 1305px; // match laptop window width
+
+
+	&.bg2 {
+		background-image: url("/preorder/images/bg_collections2.jpg");
+	    background-position-x: center;
+	    background-position-y: calc(~"50% - -280px"); // offset from center
+		background-size: 1916px 1600px; // match laptop window width
+		.wrapper {
+			.content {
+				.title {
+					font-size: 46px;
+					border-bottom: none;
+					margin-bottom: 10px;
+					.part2 {
+					    margin-left: 8px;
+					}
+				}
+				.boxes {
+					.box {
+						border: 3px solid rgba(255,255,255, .9);
+					}
+				}
+			}
+		}
+	}
+
+
+
+    background-repeat: no-repeat;
+    height: 100%;
+    .wrapper {
+    	height: 100%;
+    	width: 100%;
+    	display: table;
+	    .content {
+		    display: table-cell;
+		    vertical-align: middle;
+		    padding-bottom: 8.75%;
+			.titleContainer {
+				width: 610px;
+				//border-top: 1px solid rgba(255, 255, 255, 0.3);
+				margin-left: auto;
+				margin-right: auto;
+				padding-top: 30px;
+		    	.title {
+		    		color: white;
+	    		    
+	    		    //font-size: 46px;
+	    		    font-size: 30px;
+
+	    			letter-spacing: 1px;
+		    		text-transform: uppercase;
+		    		padding-bottom: 26px;
+		    		text-rendering: geometricPrecision;
+		    		.part1 {
+		    			font-weight: 600;
+		    			display: inline-block;
+		    		}
+		    		.part2 {
+		    			font-weight: 100;
+		    			display: inline-block;
+		    			margin-left: 8px;
+		    			letter-spacing: 2px;
+		    		}
+		    	}
+		    }
+	    	.boxes {
+	    		.box {
+	    			cursor: pointer;
+    			    
+    			    //padding-top: 53px;
+				    //padding-bottom: 53px;
+				    padding: 33px 0;
+				    
+				    //width: 262px;
+				    width: 212px;
+				    
+				    //font-size: 25px;
+				    font-size: 18px;
+				    text-transform: uppercase;
+    				
+    				//letter-spacing: 0.8px;
+    				letter-spacing: 1.4px;
+
+	    			color: white;
+	    			display: inline-block;
+	    			margin: 0 1px;
+				    margin-top: 3px;
+				    border: 2px solid white;
+				    transition: .3s;
+				    &:hover {
+			    	    background-color: rgba(255, 255, 255, 0.1);
+				    }
+	    		}
+	    	}
+	    }
+    }
+    @media all and (max-width : 1680px) {
+    	.wrapper {
+    		.content {
+    			.boxes {
+    				.box {
+    					padding-top: 40px;
+    					padding-bottom: 40px;
+    					width: 205px;
+    					font-size: 20px;
+    				}
+    			}
+    		}
+    	}
+
+	}
+
+}

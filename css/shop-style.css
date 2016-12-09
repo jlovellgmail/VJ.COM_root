@@ -1,0 +1,37 @@
+.productSelectorBgWrapper {
+	background: url(/img/bg/shop_landing.jpg) no-repeat 20% 50%;
+	background-size: cover;
+}
+
+.selItemBg-1 {
+	background: url(/img/shop/shop-men.jpg) no-repeat center 35%;
+	background-size: cover;
+	transition: opacity 0.5s 0.5s;
+}
+
+.selItemBg-2 {
+	background: url(/img/shop/shop-women.jpg) no-repeat left 25%;
+	background-size: cover;
+	transition: opacity 0.5s 0.5s;
+}
+
+.selItemBg-3 {
+	background: url(/img/bg/shop_accessories_hero.jpg) no-repeat 65% center;
+	background-size: cover;
+	transition: opacity 0.5s 0.5s;
+}
+
+.shop-active-arrow {
+	display: none;
+}
+
+.itemBtnActive.borderBtn {
+	line-height: 12px;
+	padding-top: 13px;
+	padding-bottom: 3px;
+} 
+
+.itemBtnActive .shop-active-arrow {
+	position: relative;
+	display: block;
+}

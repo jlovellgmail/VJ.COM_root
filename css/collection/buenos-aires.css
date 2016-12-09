@@ -1,0 +1,15 @@
+
+
+.buenos-airesLeafWrapper {
+	background:
+		linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),
+		url(/img/collection/buenosaires.jpg) no-repeat 40% 10%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.flip-card-blur-bg-buenos-aires {
+	background-image: url(/img/collection/buenosaires-blur.jpg);
+	background-position: 40% 10%;
+	background-attachment: fixed;
+}

@@ -1,0 +1,200 @@
+ table.generalTable {
+    border: 1px solid #bbbdbf;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+ table.generalTable.widthAuto {
+    width: auto;
+	margin:0 auto;
+  }
+  
+  table.generalTable tr {
+    border: 1px solid #d7d7d8;
+    padding: 5px;
+  }
+
+  table.generalTable.plain tr {
+    border: 1px solid transparent;
+    padding: 5px;
+  }
+
+  table.generalTable tr.vMid td,
+  table.generalTable tr.vMid td img {
+	vertical-align:middle;
+  }
+
+  table.generalTable th, table.generalTable td {
+    padding: 10px;
+    text-align: left;
+    vertical-align:middle;
+  }
+
+  table.generalTable th {
+    font-size: 14px;
+    letter-spacing: 1px;
+	background-color:#000;
+    color:#fff;
+  }
+
+  table.generalTable th a { color:#fff; }
+
+  @media screen and (max-width: 767px) {
+    table.generalTable.generalTableRespond { border: 0; }
+
+    table.generalTable.generalTableRespond thead { display: none; }
+
+    table.generalTable.generalTableRespond tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #d7d7d8;
+    }
+
+    table.generalTable.generalTableRespond td {
+      display: block;
+      text-align: left;
+      font-size: 13px;
+      border-bottom: 1px dotted #bbbdbf;
+      vertical-align:middle;  
+    }
+	
+    table.generalTable.generalTableRespond td:last-child {
+      border-bottom: 0;
+    }
+
+    table.generalTable.generalTableRespond td:before {
+      content: attr(data-label);
+      float: none;
+	  display:block;
+      text-transform: uppercase;
+      font-weight: bold;
+	  margin-bottom:8px;
+	}
+  }	
+  
+.generalTableScroll {
+  overflow-x: auto;
+  min-height: 0.01%;
+}
+
+.tableWrapperAuto{width:auto;}  
+.generalTable td.tableCheck{ padding-left:45px; position:relative;}  
+.generalTable input.tableCheck{ width:30px; position:absolute; left:10px; }  
+.tableCheckAll{float:left; margin:30px 15px 15px 14px;}
+.flexImage.maxw300 div{max-width:300px; margin:0 auto;}
+
+@media screen and (max-width: 767px) {
+  .generalTableScroll{
+    width: calc(100vw - 45px);
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #d7d7d8;
+  }
+  .generalTableScroll > .generalTable { margin-bottom: 0; }
+  .generalTableScroll > .generalTable > thead > tr > th,
+  .generalTableScroll > .generalTable > tbody > tr > th,
+  .generalTableScroll > .generalTable > tfoot > tr > th,
+  .generalTableScroll > .generalTable > thead > tr > td,
+  .generalTableScroll > .generalTable > tbody > tr > td,
+  .generalTableScroll > .generalTable > tfoot > tr > td { white-space: nowrap; }
+  
+  table.generalTable.generalTableRespond  td { padding-left:45px; position:relative;}  
+
+}
+
+.inlineTextArea{
+	margin-right:30px; 
+	margin-left:15px;
+	vertical-align:middle;
+}
+ 
+.inlineTextArea textarea{
+	width:260px; 
+	height:75px;
+	vertical-align:middle;
+}
+
+.inlineTextArea button{
+	line-height:30px; 
+	padding:3px 12px;
+	display:inline-block; 
+	vertical-align:middle; 
+	position:relative; 
+	vertical-align:middle;
+	margin-left:15px;
+}
+
+.generalTable.striped>tbody>tr:nth-child(odd)>td, .generalTable.striped>tbody>tr:nth-child(odd)>th { background-color: #F6F5F4; }
+
+.generalTable.nested  thead tr th { background-color:transparent;} 
+
+.generalTable.nested  thead tr th, .generalTable.nested  thead tr th a { color:#000; }
+
+.generalTable.nested tr{ border-left:1px solid transparent; border-right:1px solid transparent; }
+.generalTable.nested tr{ border-bottom:1px solid transparent; }
+
+.generalTable tr td.nestedContainer{ padding:0;}
+
+.generalTable.nestedTableGroupParent tr td { background-color:#F6F5F4 } 
+
+/*.generalTable.nestedTableGroupParent tr td { font-weight:bold;} */
+
+.generalTable.nestedTableGroupChild tr td { font-size:16px; color:#797B7D;} 
+
+.generalTable.nestedTableGroupChild thead tr th:first-child, .generalTable.nestedTableGroupChild  tbody tr td:first-child { padding-left:75px; }
+
+.generalTable  tr td.nestedTableGroup {padding:0; }
+
+.generalTable.nested{padding:0; border:1px solid transparent !important;}
+
+.generalTable.nested  tr { border:1px solid transparent !important; }
+
+.generalTable.nested.bordered  tr { border-top:1px solid #bbbdbf; border-bottom:1px solid #bbbdbf;}
+
+.w75{width:75px;}
+.w100{width:150px;}
+.w125{width:125px;}
+.w150{width:150px;}
+.w175{width:175px;}
+.w200{width:200px;}
+.w225{width:225px;}
+.w250{width:250px;}
+.w275{width:275px;}
+.w300{width:300px;}
+.w325{width:325px;}
+.w350{width:350px;}
+.padr5{padding-right:5px;}
+.padr10{padding-right:10px;}
+.padr15{padding-right:15px;}
+.padr20{padding-right:20px;}
+.padr25{padding-right:25px;}
+.padr30{padding-right:30px;}
+.padl5{padding-left:5px;}
+.padl10{padding-left:10px;}
+.padl15{padding-left:15px;}
+.padl20{padding-left:20px;}
+.padl25{padding-left:25px;}
+.padl30{padding-left:30px;}
+.w25p{width:25%;}
+.w33p{width:33%;}
+.w50p{width:50%;}
+.w66p{width:66%;}
+.w75p{width:75%;}
+.padl120{padding-left:120px;}
+
+table.bordered tr td { border-bottom:1px solid #F6F5F4; border-top:1px solid #F6F5F4;}
+
+table.bordered tr:last-child td { border-bottom:1px solid transparent; border-top:1px solid #F6F5F4;}
+
+.generalTable .fixedCell{
+ table-layout: fixed;
+ overflow:hidden;
+}
+
+.generalTable .fixedCell.fixedCell75{ width: 75px; }
+.generalTable .fixedCell.fixedCell100{ width: 100px; }
+.generalTable .fixedCell.fixedCell125{ width: 125px; }

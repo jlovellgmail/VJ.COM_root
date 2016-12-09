@@ -1,0 +1,154 @@
+.owlBgWrapper {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	height: 100%;
+}
+
+.landingSlideWrapper {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0px 0px 40px 20px rgba(0,0,0,0.65);
+}
+
+.slideBg1 {
+	background:
+		url(/img/slider/vj_home_slide1.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.slideBg2 {
+	background:
+		url(/img/slider/vj_home_slide2.jpg) no-repeat 87% 50%;
+	background-size: cover;
+}
+
+.slideBg3 {
+	background:
+		url(/img/slider/vj_home_slide4.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.slideBg4 {
+	background:
+		url(/img/slider/vj_home_slide3.jpg) no-repeat 100% 40%;
+	background-size: cover;
+}
+
+.slide {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	max-width: 1200px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.slide1 { }
+.slide2 { }
+.slide3 { }
+.slide4 { }
+.slide5 { }
+.slide6 { }
+.slide7 { }
+.slide8 { }
+.slide9 { }
+
+.sliderTitle1 {
+	position: relative;
+	display: block;
+	font-family: 'proxima-nova', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 22px;
+	letter-spacing: 10px;
+	line-height: 22px;
+	margin-bottom: 0;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0 2px 5px #000;
+	/*padding-left: 8px;*/
+}
+
+.sliderTitle2 {
+	position: relative;
+	display: block;
+	font-family: 'proxima-nova', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 52px;
+	letter-spacing: 4px;
+	line-height: 52px;
+	margin-bottom: 12px;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0 2px 5px #000;
+}
+
+.sliderP {
+	position: relative;
+	/*padding: 0 15px;*/
+}
+
+
+/* ====== Media Queries ====== */
+
+@media all and (min-width : 741px) {
+
+	.sliderCellWrapper {
+		text-align: left;
+	}
+
+	.sliderTitle1 {
+		font-size: 28px;
+		letter-spacing: 15px;
+		line-height: 28px;
+		margin-bottom: 4px;
+		/*padding-left: 45px;*/
+	}
+
+	.sliderTitle2 {
+		font-size: 70px;
+		letter-spacing: 6px;
+		line-height: 70px;
+		margin-bottom: 18px;
+		/*padding-left: 42px;*/
+	}
+
+	.sliderP {
+		/*padding-left: 45px;*/
+		/*padding-right: 0;*/
+		width: 455px;
+	}
+
+}
+
+@media all and (min-width : 1440px) {
+
+	.sliderTitle1,
+	.sliderTitle2,
+	.sliderP {
+		/*padding-left: 0;*/
+		/*padding-right: 45px;*/
+	}
+
+}
+
+/*@media all and (min-width : 1260px) {
+
+	.sliderTitle1,
+	.sliderTitle2,
+	.sliderP {
+		padding-left: 60px;
+	}
+
+	.sliderP {
+		width: 470px;
+	}
+
+}*/

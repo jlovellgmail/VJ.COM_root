@@ -1,0 +1,81 @@
+/**
+* Owl Carousel v2.0.0-beta.3
+* Copyright 2013-2015 Smashing Boxes
+* Licensed under MIT (https://github.com/smashingboxes/OwlCarousel2/blob/master/LICENSE)
+*/
+/* 
+* 	Default theme - Owl Carousel CSS File
+*/
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: #869791;
+    color: #FFF;
+    text-decoration: none;
+}
+.owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* 
+*   Customized for Virgil James - Owl Carousel CSS File
+*/
+
+.owl-nav {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 25px);
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.owl-nav [class*='owl-'] {
+    display: inline-block;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.owl-nav [class*='owl-']:hover {
+    text-decoration: none;
+}
+.owl-nav .owl-prev {
+    position: absolute;
+    left: 0;
+}
+.owl-nav .owl-next {
+    position: absolute;
+    right: 0; 
+}
+.owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+@media all and (min-width : 741px) {
+    .owl-nav {
+        top: calc(50% - 40px);
+    }
+    .owl-nav [class*='owl-'] {
+        line-height: 80px;
+    }
+    .owl-nav .owl-prev { }
+    .owl-nav .owl-next { }
+}
+
+/* .lightBoxOverlay .productDetailsBgWrapper */

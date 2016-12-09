@@ -1,0 +1,60 @@
+/*	Colors:							*/
+/*	green-gold:			#928b53		*/
+/*	grey:				#797b7d		*/
+/*	light green-gold:	#f1f0e9		*/
+/*	dark green-gold:	#5e5a36		*/
+/*									*/
+
+
+.noCenterWrapper {
+	padding-top: 6vh;
+	padding-bottom: 6vh;
+}
+
+.userInfoWrapper {
+	position: relative;
+	display: inline-block;
+	padding: 15px;
+	border: 1px solid #928b53;
+	background-color: #fff;
+}
+
+.primaryShippingLine {
+	position: relative;
+	display: block;
+	font-family: "proxima-nova",sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #777;
+}
+
+.pslName {
+	color: #928b53;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.pslEmail {
+	font-style: italic;
+}
+
+@media all and (min-width : 741px) {
+
+	.overviewTableWrapper {
+		margin-top: 60px;
+	}
+
+	.usrCheckoutLeft {
+		padding-right: 30px;
+	}
+
+	.noCenterWrapper {
+		padding-top: 8vh;
+		padding-bottom: 8vh;
+	}
+
+	.userInfoWrapper {
+		padding: 30px;
+	}
+
+}

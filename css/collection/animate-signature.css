@@ -1,0 +1,31 @@
+.fullBG {
+	position: fixed;
+	background:
+		linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+		url(/img/slider/vj_graffiti.jpg) no-repeat center 28%;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+}
+
+
+.shopItemsWrapper {
+	opacity: 0;
+}
+
+
+.lineProductsOpacity {
+	opacity: 1 !important;
+	transition: opacity 0.5s;
+}
+
+/*
+.productSelectorBgWrapper,
+.collectionIntroBgWrapper,
+.collectionIntroBgWrapper h2,
+.collectionIntroBgWrapper .collectionIntroP,
+.highlightsWrapper {
+	opacity: 0;
+}
+*/

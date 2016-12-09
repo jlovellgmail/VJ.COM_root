@@ -1,0 +1,496 @@
+#index-hash-01 {
+	background-image: url(/img/index/photo-mocks/1.jpg);
+	background-position: 25% 65%;
+}
+
+#index-hash-03 {
+	background-image: url(/img/index/photo-mocks/3.jpg);
+	background-position: center;
+}
+
+#index-hash-05 {
+	background-image: url(/img/index/photo-mocks/5.jpg);
+	background-position: center top;
+}
+
+#index-hash-07 {
+	background-image: url(/img/index/photo-mocks/7.jpg);
+	background-position: 35% 60%;
+}
+
+.flip-card-blur-bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.flip-card-blur-bg-01 {
+	background-image: url(/img/index/photo-mocks/1-blur.jpg);
+	background-position: 25% 65%;
+}
+
+.flip-card-blur-bg-02 {
+	background-image: url(/img/index/photo-mocks/3-blur.jpg);
+	background-position: center;
+}
+
+.flip-card-blur-bg-03 {
+	background-image: url(/img/index/photo-mocks/5-blur.jpg);
+	background-position: center top;
+}
+
+.flip-card-blur-bg-04 {
+	background-image: url(/img/index/photo-mocks/7-blur.jpg);
+	background-position: 35% 60%;
+}
+
+.flip-card-blur-bg-all {
+	background-image: url(/img/shop/shop-all-blur.jpg);
+	background-position: center 100%;
+	background-attachment: fixed;
+}
+
+.flip-card-blur-bg-men {
+	background-image: url(/img/shop/shop-men-blur.jpg);
+	background-position: center 35%;
+	background-attachment: fixed;
+}
+
+.flip-card-blur-bg-women {
+	background-image: url(/img/shop/shop-women-blur.jpg);
+	background-position: left 25%;
+	background-attachment: fixed;
+}
+
+.flip-card-blur-bg-accessories {
+	background-image: url(/img/shop/shop-acc-hero-blur.jpg);
+	background-position: 50% 75%;
+	background-attachment: fixed;
+}
+
+.index-slide.flippyshow .flip-card-blur-bg {
+	opacity: 1;
+}
+
+.index-slide {
+	position: relative;
+	display: block;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: background-image 0.5s;
+}
+
+.fixed-slide-bg-01,
+.fixed-slide-bg-02,
+.fixed-slide-bg-03 {
+	/*background-attachment: fixed;*/
+}
+
+.fixed-slide-bg-01 {
+	background-image: url(/img/index/photo-mocks/2.jpg);
+	background-position: 70% center;
+}
+
+.fixed-slide-bg-02 {
+	background-image: url(/img/index/photo-mocks/4.jpg);
+	background-position: 25% 25%;
+}
+
+.fixed-slide-bg-03 {
+	background-image: url(/img/index/photo-mocks/6.jpg);
+	background-position: 67% 23%;
+}
+
+.flipcard {
+	position: absolute;
+	top: 51%;
+	top: -webkit-calc(50% + 15px);
+	top: calc(50% + 15px);
+	right: 50%;
+	border: 15px solid #fff;
+	font-size: 32px !important;
+	height: auto;
+	line-height: 36px !important;
+	max-width: 500px;
+	opacity: 0;
+	overflow: hidden;
+	pointer-events: none;
+	-ms-transform: translateY(50%,-50%);
+	-webkit-transform: translateY(50%,-50%);
+	-moz-transform: translateY(50%,-50%);
+	-o-transform: translateY(50%,-50%);
+	transform: translate(50%,-50%);
+	transition: opacity 0.5s;
+	width: 100%;
+	z-index: 2;
+}
+
+.flipcard .aspect-dummy-two-thirds {
+	padding-top: 0;
+}
+
+.flipcard .aspect-img {
+	position: relative;
+	display: block;
+}
+
+.flipcard p,
+.flipcard span {
+	font-size: 15px !important;
+	line-height: 24px !important;
+}
+
+.card-left p:first-child {
+	margin-bottom: 30px;
+}
+
+.card-left p:first-child,
+.card-left p:last-child {
+	/*font-size: 20px !important;*/
+}
+
+.index-slide.flippyshow .flipcard {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.flipcard .aspect-img {
+	background-color: rgba(255,255,255,0.85);
+	/*font-family: 'Coming Soon', cursive;*/
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.postcard-stamp {
+	position: absolute;
+	top: -8px;
+	right: -5px;
+	width: 55%;
+	height: auto;
+	max-width: 175px;
+}
+
+.card-left {
+	margin: 30px 15px 15px;
+	text-align: left;
+}
+
+.flipcard .card-left p {
+	color: #877;
+}
+
+.card-right {
+	display: none;
+}
+
+@media all and (min-width : 741px) {
+
+	.flipcard {
+		width: calc(100vw - 60px);
+		max-width: 800px;
+		margin: 0 auto;
+		border-top-left-radius: 4% 6%;
+		border-bottom-right-radius: 4% 6%;
+	}
+
+	.flipcard .aspect-img {
+		position: absolute;
+	}
+
+	.flipcard .aspect-dummy-two-thirds {
+		padding-top: 66%;
+	}
+
+	.postcard-stamp {
+		top: 0;
+		right: -1%;
+		width: 45%;
+		max-width: none;
+	}
+
+	.card-left {
+		margin: 5%;
+		text-align: left;
+	}
+
+	.card-left p:first-child {
+		margin-bottom: 15px;
+	}
+
+	.card-divider {
+		position: absolute;
+		width: 2px;
+		height: calc(100% - 8%);
+		top: 4%;
+		left: 50%;
+		background-color: #877;
+	}
+
+	.card-right {
+		padding: 5%;
+		display: inline-block;
+	}
+
+}
+
+@media all and (min-width : 860px) {
+
+	.flipcard p,
+	.flipcard span {
+		font-size: 18px !important;
+		line-height: 34px !important;
+	}
+
+	.card-left p:first-child,
+	.card-left p:last-child {
+		/*font-size: 22px !important;*/
+	}
+
+}
+
+
+.return-address {
+	position: absolute;
+	bottom: 12%;
+	right: 0;
+	left: 0;
+}
+
+.flipcard .return-address span {
+	color: #877;
+	padding: 4px 0;
+}
+
+.postcard-address-01,
+.postcard-address-02,
+.postcard-address-03 {
+	position: relative;
+	display: block;
+	text-transform: uppercase;
+}
+
+.postcard-address-01 {
+	border-bottom: 2px solid #877;
+}
+.postcard-address-02 {
+	border-bottom: 2px solid #877;
+}
+
+.gps-lockup span,
+.stampy-mc-stampface {
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+.postcard-cancel {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	color: #fff;
+	opacity: 0;
+	width: 0;
+	overflow: hidden;
+	cursor: pointer;
+	transition: opacity 0.5s;
+	font-size: 32px;
+}
+
+.index-slide.flippyshow .gps-lockup span,
+.index-slide.flippyshow .stampy-mc-stampface {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.index-slide.flippyshow .gps-lockup  {
+	pointer-events: none;	
+}
+
+.index-slide.flippyshow .postcard-cancel {
+	opacity: 1;
+	width: auto;
+}
+
+.gps-lockup {
+	position: absolute;
+	bottom: 15px;
+	right: 30px;
+	width: auto;
+	text-align: right;
+	z-index: 1;
+}
+
+.index-slide .widthWrapper.tableWrapper,
+.index-slide.shopLeafWrapper .tableWrapper {
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+.index-slide.flippyshow .widthWrapper.tableWrapper,
+.index-slide.flippyshow.shopLeafWrapper .tableWrapper {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.scroll-arrow-indicator,
+.scroll-arrow-indicator-bottom {
+	display: none;
+}
+
+.white-hairline {
+	position: relative;
+	display: block;
+	height: 1px;
+	background-color: #fff;
+	z-index: 4;
+}
+
+.product-hero-slide {
+	position: relative;
+	height: 100vh;
+}
+
+.lockup-topline {
+	position: relative;
+	display: block;
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+.stampy-mc-stampface {
+	position: relative;
+	display: inline-block;
+	height: 50px;
+	margin-left: -30px;
+	cursor: pointer;
+	-webkit-filter: drop-shadow(0 4px 2px rgba(0,0,0,0.25));
+	filter: drop-shadow(0 4px 2px rgba(0,0,0,0.25));
+}
+
+.lockup-topline span,
+.stampy-mc-stampface {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.lockup-bottomline {
+	position: relative;
+	display: block;
+	text-align: right;
+}
+
+.gps-lockup-coords {
+	position: relative;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.flippy-mc-flipface {
+	position: relative;
+	display: none;
+	color: #fff;
+	font-size: 24px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.product-massage-01,
+.product-massage-02 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.product-massage-01 {
+	left: 15px;
+	text-align: left;
+}
+
+.product-massage-02 {
+	right: 15px;
+	text-align: right;
+}
+
+.product-message-title-topline {
+	position: relative;
+	color: #fff;
+	text-shadow: 0 2px 5px #000;
+	line-height: 1.1;
+	font-family: 'minion-pro-subhead', serif;
+	font-style: italic;
+	font-weight: 300;
+	letter-spacing: 12px;
+}
+
+.product-message-title-bottomline  {
+	position: relative;
+	display: block;
+	margin-bottom: 30px;
+	color: black;
+	letter-spacing: 2;
+	text-shadow:
+	-1px -1px 0 #fff,  
+	1px -1px 0 #fff,
+	-1px 1px 0 #fff,
+	1px 1px 0 #fff;
+}
+
+.product-message-title-paragraph {
+	position: relative;
+	display: none;
+	color: #fff;
+	font-weight: 300; line-height: 1.5;
+}
+
+@media all and (min-width : 741px) {
+
+	.gps-lockup {
+		bottom: 80px;
+		right: 90px;
+	}
+
+	.flippy-mc-flipface {
+		display: inline-block;
+	}
+
+	.scroll-arrow-indicator,
+	.scroll-arrow-indicator-bottom {
+		display: inherit;
+	}
+
+	.product-message-title-paragraph {
+		display: block;
+	}
+
+	.product-massage-01,
+	.product-massage-02 {
+		width: 400px;
+	}
+
+	.product-massage-01 {
+		left: 0;
+		margin: 0 12% 8% 8%;
+	}
+
+	.product-massage-02 {
+		margin: 0 8% 8% 12%;
+		right: 0;
+	}
+
+}
+
+@media all and (min-width : 1561px) {
+
+	.product-massage-01,
+	.product-massage-02 {
+		width: 450px;
+	}
+
+}

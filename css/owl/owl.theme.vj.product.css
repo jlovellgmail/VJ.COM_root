@@ -1,0 +1,157 @@
+/**
+* Owl Carousel v2.0.0-beta.3
+* Copyright 2013-2015 Smashing Boxes
+* Licensed under MIT (https://github.com/smashingboxes/OwlCarousel2/blob/master/LICENSE)
+*/
+/* 
+* 	Default theme - Owl Carousel CSS File
+*/
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: #869791;
+    color: #FFF;
+    text-decoration: none;
+}
+.owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* 
+*   Customized for Virgil James - Owl Carousel CSS File
+*/
+
+.prodGallerySlider .owl-carousel .owl-stage-outer {
+  padding-bottom: 0 !important;
+}
+
+.prodGallerySlider .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.prodGallerySlider .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  margin: 5px 8px;
+  background: #000;
+  display: block;
+  -webkit-backface-visibility: visible;
+  border-radius: 60px;
+  /*box-shadow: 0 2px 5px #000;*/
+
+}
+.prodGallerySlider .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #fff;
+  border: 2px solid black;
+}
+
+.prodGallerySlider .owl-dots {
+  position: absolute;
+  display: inline-block;
+  width: auto;
+  padding: 15px 15px 0;
+  bottom: -42px;
+  left: 0;
+  right: 0;
+}
+
+.prodGallerySlider .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 16px);
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.prodGallerySlider .owl-nav [class*='owl-'] {
+    display: inline-block;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.prodGallerySlider .owl-nav [class*='owl-']:hover {
+    text-decoration: none;
+}
+
+.prodGallerySlider .owl-nav .owl-prev {
+    position: absolute;
+    left: -25px;
+}
+
+.prodGallerySlider .owl-nav .owl-next {
+    position: absolute;
+    right: -25px; 
+}
+
+.prodGallerySlider .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+@media all and (min-width : 741px) {
+    .prodGallerySlider .owl-nav { }
+    .prodGallerySlider .owl-nav [class*='owl-'] { }
+    .prodGallerySlider .owl-nav .owl-prev { left: -30px; }
+    .prodGallerySlider .owl-nav .owl-next { right: -30px; }
+}
+
+/* Product Gallery LightBox Nav Styling */
+
+
+.lightBoxOverlay .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 20px);
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.lightBoxOverlay .owl-nav [class*='owl-'] {
+    display: inline-block;
+    color: #fff;
+    font-size: 32px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.lightBoxOverlay .owl-nav [class*='owl-']:hover {
+    text-decoration: none;
+}
+.lightBoxOverlay .owl-nav .owl-prev {
+    position: absolute;
+    left: -36px;
+}
+.lightBoxOverlay .owl-nav .owl-next {
+    position: absolute;
+    right: -36px; 
+}
+.lightBoxOverlay .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+@media all and (min-width : 741px) {
+    .lightBoxOverlay .owl-nav { }
+    .lightBoxOverlay .owl-nav [class*='owl-'] { }
+    .lightBoxOverlay .owl-nav .owl-prev { left: -45px; }
+    .lightBoxOverlay .owl-nav .owl-next { right: -45px; }
+}
+

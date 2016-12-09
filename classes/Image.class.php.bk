@@ -1,0 +1,48 @@
+<?php
+
+class Image {
+
+    protected $imgType;
+    protected $imgID;
+    protected $imgName;
+    protected $exist;
+    protected $ext;
+    protected $Url;
+
+    const location = '/uploadedImages/';
+
+    protected $path;
+
+    public function __construct() {
+        
+    }
+
+    public function initialize($id, $type, $url) {
+        $rootpath = $_SERVER['DOCUMENT_ROOT'];
+        $this->path = $rootpath . $url;
+        $this->Url = $url;
+        clearstatcache();
+        if (file_exists($this->path)) {
+            $nameArr = explode(".", $url);
+            if (isset($nameArr[sizeof($nameArr)-1])) {
+                $this->ext = $nameArr[sizeof($nameArr)-1];
+                $this->imgType = $type;
+                $this->imgID = $id;
+				$nameArr = explode("." . $this->ext, $url);
+                $nameArr = explode("\\", $nameArr[0]);
+                $this->imgName = $nameArr[sizeof($nameArr) - 1];
+            }
+            $this->exist = "true";
+        } else {
+            $this->exist = "false";
+        }
+    }
+
+    public function existImg() {
+        return $this->exist;
+    }
+
+	public function correctImgPath($no) {
+		return str_replace("\\", "/", $this->Url); 
+    }
+}

@@ -1,0 +1,155 @@
+/*! jQuery UI - v1.11.4 - 2015-06-04
+* http://jqueryui.com
+* Includes: core.css, draggable.css, resizable.css, selectable.css, sortable.css
+* Copyright 2015 jQuery Foundation and other contributors; Licensed MIT */
+
+.ui-helper-hidden{display:none}.ui-helper-hidden-accessible{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.ui-helper-reset{margin:0;padding:0;border:0;outline:0;line-height:1.3;text-decoration:none;font-size:100%;list-style:none}.ui-helper-clearfix:before,.ui-helper-clearfix:after{content:"";display:table;border-collapse:collapse}.ui-helper-clearfix:after{clear:both}.ui-helper-clearfix{min-height:0}.ui-helper-zfix{width:100%;height:100%;top:0;left:0;position:absolute;opacity:0;filter:Alpha(Opacity=0)}.ui-front{z-index:100}.ui-state-disabled{cursor:default!important}.ui-icon{display:block;text-indent:-99999px;overflow:hidden;background-repeat:no-repeat}.ui-widget-overlay{position:fixed;top:0;left:0;width:100%;height:100%}.ui-draggable-handle{-ms-touch-action:none;touch-action:none}.ui-resizable{position:relative}.ui-resizable-handle{position:absolute;font-size:0.1px;display:block;-ms-touch-action:none;touch-action:none}.ui-resizable-disabled .ui-resizable-handle,.ui-resizable-autohide .ui-resizable-handle{display:none}.ui-resizable-n{cursor:n-resize;height:7px;width:100%;top:-5px;left:0}.ui-resizable-s{cursor:s-resize;height:7px;width:100%;bottom:-5px;left:0}.ui-resizable-e{cursor:e-resize;width:7px;right:-5px;top:0;height:100%}.ui-resizable-w{cursor:w-resize;width:7px;left:-5px;top:0;height:100%}.ui-resizable-se{cursor:se-resize;width:12px;height:12px;right:1px;bottom:1px}.ui-resizable-sw{cursor:sw-resize;width:9px;height:9px;left:-5px;bottom:-5px}.ui-resizable-nw{cursor:nw-resize;width:9px;height:9px;left:-5px;top:-5px}.ui-resizable-ne{cursor:ne-resize;width:9px;height:9px;right:-5px;top:-5px}.ui-selectable{-ms-touch-action:none;touch-action:none}.ui-selectable-helper{position:absolute;z-index:100;border:1px dotted black}.ui-sortable-handle{-ms-touch-action:none;touch-action:none}
+
+/*VJ STYLES jcoughlin */
+.sortableList li {
+ padding:10px 80px 10px 60px;
+ background-color:#f6f6f6;
+ border:1px solid #e6e6e6;
+ list-style-type:none;
+ position:relative;
+ }
+
+.sortableList {
+ display:block;
+ padding:0;
+ text-indent:0;
+ }
+
+.sortableList li {
+ padding:10px 10px 10px 60px;
+ background-color:#f6f6f6;
+ border:1px solid #e6e6e6;
+ list-style-type:none;
+ position:relative;
+ }
+
+.sortableList li:before {
+ width:30px;
+ height:30px;
+ font-family: 'fontello';
+ content: '\e814';
+ display:block;
+ position:absolute;
+ left:15px;
+ cursor:move;
+ text-align:center;
+ padding-top:6px;
+ font-size:16px;
+ }
+
+.sortableImgGrid {
+ list-style-type: none;
+ margin:10px 0;
+ padding: 0;
+ }
+ 
+@media all and (orientation : landscape) and (min-width : 555px) {
+.sortableImgGrid {
+ margin:10px -15px;
+ } 
+}
+
+.sortableImgGrid li.ui-sortable-handle { margin-bottom:15px; }
+
+.sortableImgGrid li.ui-sortable-handle  img { border:6px solid transparent; margin-left:-6px;}
+
+.sortableImgGrid li.ui-sortable-handle.ui-sortable-helper img {	border:6px solid #000000;}
+
+/*APR 07 2016 jcoughlin*/
+.content-block-reorder > .ui-default-state {
+	height: 120px;
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+	background-color: #f6f6f6;
+	border: 1px solid #e6e6e6;
+	padding: 10px;
+	position: relative;
+	padding-left: 150px;
+	margin-bottom: 15px;
+}
+
+.admin-content-block .ui-sortable-handle.ui-sortable-helper:hover{
+ cursor: move;
+}
+
+.admin-content-block .ui-sortable-handle.ui-sortable-helper{
+ border:2px solid #000000;
+ opacity:.75;
+ background-color:#fff;
+ padding:20px;
+ /*pointer-events: none;*/
+}
+
+.content-block-reorder > .ui-default-state div {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 128px;
+}
+
+.content-block-reorder > .ui-default-state div.block-video {
+	background-color: #000;
+	text-align: center;
+}
+
+.content-block-reorder > .ui-default-state div.block-video img {
+	margin: 0 auto;
+}
+
+.content-block-reorder > .ui-default-state div span {
+	width: 100%;
+	display: block;
+	background-color: #f6f6f6;
+	text-align: center;
+	padding-top: 7px;
+	font-size: .9em;
+}
+
+/* APR 18 2016 jcoughlin*/
+#reorder-posts .ui-sortable-handle{
+ background-color: #f6f6f6;
+ border: 1px solid #e6e6e6;
+}
+
+#reorder-posts .ui-sortable-handle:hover{ cursor: move; }
+
+#reorder-posts .ui-sortable-handle.ui-sortable-helper{
+ border:2px solid #000000;
+ opacity:.75;
+ /*pointer-events: none;*/
+}
+
+ #orderFavorites .ui-sortable-handle{
+ background-color: #f6f6f6;
+ border: 1px solid #e6e6e6;
+ }
+#orderFavorites .ui-sortable-handle.ui-sortable-helper{
+  border:2px solid #000;
+  opacity:.75; 
+ }
+
+.re-order-thumbnail{
+ position:relative;
+ display:block;
+ vertical-align: middle;
+ text-align: left;
+ width:100%;	
+ padding:8px 8px 12px 60px;
+ min-height: 61px;
+ vertical-align: middle;
+}
+
+.re-order-thumbnail img{
+ position:absolute;
+ left:8px;
+ border:1px solid #e6e5e4;
+ width:45px;
+ height:auto;
+ clear: both;
+}

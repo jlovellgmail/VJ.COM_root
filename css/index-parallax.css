@@ -1,0 +1,253 @@
+body,
+.sdWrapper,
+.sdContent {
+	transform: translateZ(0);
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	transform: translateZ(0);
+}
+
+.index-slide {
+	position: relative;
+	display: block;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.white-hairline {
+	position: relative;
+	display: block;
+	height: 1px;
+	background-color: #fff;
+	z-index: 4;
+}
+
+.product-hero-slide {
+	position: relative;
+	height: 100vh;
+	transform-style: preserve-3d;
+	transform: translateZ(0);
+}
+
+.parallax-back {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	transform: translateZ(-0.65px) scale(1.66);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.gps-lockup {
+	position: absolute;
+	bottom: 15px;
+	right: 30px;
+	width: auto;
+	text-align: right;
+}
+
+.scroll-arrow-indicator,
+.scroll-arrow-indicator-bottom {
+	display: none;
+}
+
+	.lockup-topline {
+		position: relative;
+		display: block;
+		margin-bottom: 0px;
+	}
+
+	.lockup-bottomline {
+		position: relative;
+		display: block;
+	}
+
+		.gps-lockup-coords {
+			position: relative;
+			display: inline-block;
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+
+		.flippy-mc-flipface {
+			position: relative;
+			display: none;
+			color: #fff;
+			font-size: 24px;
+			vertical-align: middle;
+		}
+
+.product-massage-01 {
+	width: 50%;
+	left: -7%;
+	text-align: left;
+	padding: 7%;
+}
+
+.product-massage-02 {
+	width: 50%;
+	right: -7%;
+	text-align: right;
+	padding: 7%;
+}
+
+.product-massage-01,
+.product-massage-02 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	transform: translateZ(-0.35px) scale(1.35);
+}
+
+.product-message-title-topline {
+	position: relative;
+	color: #fff;
+	text-shadow: 0 2px 5px #000;
+	line-height: 1.1;
+	font-family: 'minion-pro-subhead', serif;
+	font-style: italic;
+	font-weight: 300;
+	letter-spacing: 12px;
+}
+
+.product-message-title-bottomline  {
+	position: relative;
+	display: block;
+	margin-bottom: 30px;
+	color: black;
+	letter-spacing: 2;
+	text-shadow:
+	-1px -1px 0 #fff,  
+	1px -1px 0 #fff,
+	-1px 1px 0 #fff,
+	1px 1px 0 #fff;
+}
+
+.product-message-title-paragraph {
+	position: relative;
+	display: none;
+	color: #fff;
+	font-weight: 300; line-height: 1.5;
+}
+
+@media all and (min-width : 741px) {
+
+	.gps-lockup {
+		bottom: 90px;
+		right: 120px;
+	}
+
+	.flippy-mc-flipface {
+		display: inline-block;
+	}
+
+	.scroll-arrow-indicator,
+	.scroll-arrow-indicator-bottom {
+		display: inherit;
+	}
+
+	.product-message-title-paragraph {
+		display: block;
+	}
+
+}
+
+
+
+
+
+
+
+/*
+
+.pointBox {
+	margin-bottom: 25px;
+}
+
+.pointsImg {
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	overflow: hidden;
+	height: 100vh;
+}
+
+.pointsImgDesign {
+	background: url(/img/design.png) no-repeat center;
+	background-size: cover;
+}
+
+.pointsImgQuality {
+	background: url(/img/quality.png) no-repeat center;
+	background-size: cover;
+}
+
+.pointsImgCraftsmanship {
+	background: url(/img/craftsmanship.png) no-repeat center;
+	background-size: cover;
+}
+
+.pointsBgWrapper h2 {
+}
+
+.pointBox h3 {
+	font-size: 18px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+
+@media all and (min-width : 961px) {
+
+	.col-left {
+		padding-right: 16px;
+	}
+
+	.col-center {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	.col-right {
+		padding-left: 16px;
+	}
+	
+}
+
+@media all and (min-width : 741px) {
+
+	.pointsBgWrapper h2 {
+		font-size: 36px;
+	}
+
+}
+
+@media all and (max-width : 959px) {
+	.pointBox { text-align: center !important; }
+}
+
+@media all and (orientation : landscape) and (min-width : 741px), all and (orientation : portrait) and (min-width : 421px) {
+
+	.pointBox {
+		text-align: left;
+	}
+
+}
+
+*/
+
+
+
+
+
+
+

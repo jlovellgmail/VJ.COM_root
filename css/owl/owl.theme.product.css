@@ -1,0 +1,49 @@
+/* 
+* 	Customized for Virgil James - Owl Carousel CSS File
+*/
+
+.owl-theme .owl-controls {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 25px);
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-controls .owl-nav [class*='owl-'] {
+    display: inline-block;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.owl-theme .owl-controls .owl-nav [class*='owl-']:hover {
+    text-decoration: none;
+}
+.owl-theme .owl-controls .owl-nav .owl-prev {
+    position: absolute;
+    left: 0;
+}
+.owl-theme .owl-controls .owl-nav .owl-next {
+    position: absolute;
+    right: 0; 
+}
+.owl-theme .owl-controls .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+@media all and (min-width : 741px) {
+    .owl-theme .owl-controls {
+        top: calc(50% - 40px);
+    }
+    .owl-theme .owl-controls .owl-nav [class*='owl-'] {
+        line-height: 80px;
+    }
+    .owl-theme .owl-controls .owl-nav .owl-prev { }
+    .owl-theme .owl-controls .owl-nav .owl-next { }
+}
+
+/* .lightBoxOverlay .productDetailsBgWrapper */

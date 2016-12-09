@@ -1,0 +1,16 @@
+.navBgWrapper {
+	background-color: #000;
+	height: 56px;
+}
+
+.navBgWrapper a:link,
+.navBgWrapper a:visited,
+.navBgWrapper a:hover,
+.navBgWrapper a:active,
+.navBgWrapper i {
+	color: #fff;
+}
+
+.navPlaceholder {
+	height: 56px;
+}

@@ -1,0 +1,40 @@
+.lightBoxOverlay .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 20px);
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.lightBoxOverlay .owl-nav [class*='owl-'] {
+    display: inline-block;
+    color: #fff;
+    font-size: 42px;
+    line-height: 42px;
+    cursor: pointer;
+}
+.lightBoxOverlay .owl-nav [class*='owl-']:hover {
+    text-decoration: none;
+}
+.lightBoxOverlay .owl-nav .owl-prev {
+    position: absolute;
+    left: -42px;
+}
+.lightBoxOverlay .owl-nav .owl-next {
+    position: absolute;
+    right: -42px; 
+}
+.lightBoxOverlay .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+@media all and (min-width : 741px) {
+    .lightBoxOverlay .owl-nav { }
+    .lightBoxOverlay .owl-nav [class*='owl-'] { }
+    .lightBoxOverlay .owl-nav .owl-prev { left: -56px; }
+    .lightBoxOverlay .owl-nav .owl-next { right: -56px; }
+}
+
+/* .lightBoxOverlay .productDetailsBgWrapper */

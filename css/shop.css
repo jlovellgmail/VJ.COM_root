@@ -1,0 +1,302 @@
+.scrollWaypoint {
+	top: 10%;
+}
+
+a:link .shopItemTitle { color: #000; }
+a:visited .shopItemTitle { color: #000; }
+a:hover .shopItemTitle { color: #797b7d; }
+a:active .shopItemTitle { color: #000; }
+
+
+/* ====== Background Wrappers ====== */
+
+.productSelectorBgWrapper {
+	box-shadow: 0 7px 14px rgba(0,0,0,0.35);
+	z-index: 1;
+	/* height: 65vh, declared in media queries */
+}
+
+.productSelectorBtnsWrapper-b {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	vertical-align: middle;
+	width: auto;
+	text-align: center;
+}
+
+.productBgWrapper {
+    height: auto;
+	background-color: #fff;
+	padding: 0 0 6vh;
+}
+
+.selItemBg {
+	opacity: 0;
+	transition: opacity 0.5s 0.5s;
+}
+
+.selItemBgShow {
+	opacity: 1 !important;
+	transition: opacity 0.5s 0.5s;
+}
+
+.shopLeafWrapper {
+	background:
+		linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+		url(/img/shop/shop-all.jpg) no-repeat center 100%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+/* linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), */
+
+
+/* ====== Product Selector Content ====== */
+
+.heroCatchLine1 {
+	position: relative;
+	display: block;
+	font-family: 'minion-pro-subhead', serif;
+	font-style: italic;
+	font-weight: 400;
+	color: #fff;
+	text-shadow: 0 2px 2px #4F5052;
+	font-size: 32px;
+	transition-delay: 0.25s;
+}
+
+.heroCatchLine2 {
+	position: relative;
+	display: block;
+	font-family: 'proxima-nova', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 0 2px 2px #4F5052;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.productSelectorBtnsWrapper {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+	right: 0;
+	left: 0;
+	text-align: center;
+}
+
+.itemBtnActive {
+	font-weight: 700;
+}
+
+.selItemBg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.selBgActive {
+	opacity: 1;
+	transition: opacity 0.5s 0.5s;
+}
+
+.selBgInactive {
+	opacity: 0;
+	transition: opacity 0.5s 0.5s;
+}
+
+.shopBackBtnWrapper {
+	position: absolute;
+	left: 30px;
+	bottom: 22px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/* Shop Items and Stuff */
+
+.filterMens, .filterWomens, .filterAcc, .filterFeatured, .filterAll {
+	padding-bottom: 6vh;
+	max-height: 99999px;
+	background-color: #fff;
+}
+
+.filterOff {
+	max-height: 0 !important;
+	opacity: 0;
+	padding: 0 !important;
+	transition: opacity 0.5s 0s, max-height 0s 0.5s, padding 0s 0.5s;
+}
+
+.filterOn {
+	opacity: 1;
+	transition: opacity 0.5s 0.5s;
+}
+
+.genderTitle {
+	margin: 0 0 20px;
+}
+
+.shopItem {
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.shopItemPrice {
+	display: block;
+	font-family: 'proxima-nova', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+ 	font-size: 16px;
+ 	color: #000;
+}
+
+.shopItemTitle {
+	display: block;
+	font-family: 'proxima-nova', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+ 	font-size: 16px;
+ 	text-transform: uppercase;
+}
+
+.shopItemSubtitle {
+	font-family: 'minion-pro-subhead', serif;
+	font-style: italic;
+	font-weight: 400;
+ 	font-size: 16px;
+	color: #797b7d;
+	line-height: 28px;
+}
+
+.shopItem img {
+	width: 100%;
+	max-width: 350px;
+	height: auto;
+	padding: 30px;
+}
+
+
+/* ====== Media Queries ====== */
+
+@media all and (orientation : portrait) and (max-width : 420px) {
+
+	.productSelectorBgWrapper {
+		height: 65vh;
+	}
+
+	.heroCatchLine2 {
+		font-size: 20px;
+	}
+
+	.borderBtn {
+		margin: 5px auto;
+	}
+
+}
+
+@media all and (orientation : landscape) and (max-width : 740px) {
+
+	.productSelectorBgWrapper {
+		height: 65vh;
+	}
+
+	.borderBtn {
+		display: inline-block;
+		margin: 10px 5px;
+	}
+
+}
+
+@media all and (orientation : landscape) and (min-width : 741px), all and (orientation : portrait) and (min-width : 421px) {
+
+	.productSelectorBgWrapper {
+		height: calc(60vh + 64px);
+	}
+
+	.productSelectorBtnsWrapper {
+		position: absolute;
+		bottom: 60px;
+		width: auto;
+	}
+
+	.heroCatchLine2 {
+		margin-bottom: 30px;
+	}
+
+	.pstBump {
+		top: calc(37% - 32px) !important;
+	}
+
+	.selItemTitle {
+		top: calc(37% + 20px);
+	}
+
+	.borderBtn {
+		display: inline-block;
+		margin: 10px 5px;
+	}
+
+}
+
+@media all and (min-width : 585px) and (min-height: 575px) {
+	.productSelectorBtnsWrapper {
+		/*bottom: 30px;*/
+	}
+}
+@media all and (min-width : 585px) and (min-height: 635px) {
+	.productSelectorBtnsWrapper {
+		/*bottom: 45px;*/
+	}
+}
+
+@media all and (min-width : 741px) {
+
+	.heroCatchLine1 {
+		font-size: 48px;
+	}
+
+	.heroCatchLine2 {
+		font-size: 36px;
+		line-height: 42px;
+	}
+
+}
+
+@media all and (min-width : 1200px) {
+
+	.borderBtn {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+
+}
+
+/* Here's some MQs to account for shitty iPhone 4 & 5's Landscape Landing Viewport */
+
+@media all and (max-width : 568px) and (orientation : landscape) {
+
+	.productSelectorBtnsWrapper .sm-twelve {
+		width: 25%;
+	}
+
+	.featuredProductsBg .shopItem { width: 33%; vertical-align: top; }
+	.featuredProductsBg .shopItem img { padding: 15px; }
+	.featuredProductsBg .shopItem .shopItemTitle { font-size: 14px; }
+
+}
+
+@media all and (min-width : 1261px) {
+
+	.productSelectorBtnsWrapper {
+		bottom: 60px;
+	}
+
+}

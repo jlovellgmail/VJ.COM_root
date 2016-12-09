@@ -1,0 +1,113 @@
+.lightBoxOverlay {
+	position: fixed;
+	display: table;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	table-layout: fixed !important; /* keeps Owl from jacking up the width */
+	padding: 70px 30px 15px;
+	background-color: rgba(0,0,0,0.85);
+	z-index: 13;
+}
+
+.lightBoxWrapper {
+	position: relative;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	height: 100%;
+	width: 100%;
+}
+
+.lightBoxLeafWrapper {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	max-width: 1200px;
+	max-height: 900px;
+}
+
+.lightBoxClose {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 35px;
+	height: 35px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 15;
+	cursor: pointer;
+}
+
+.lightBoxClose i {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 18px;
+	line-height: 35px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.lightBoxCarousel {
+	max-height: 100%;
+	cursor: grab;
+}
+
+.lightBoxImgWrapper {
+	position: relative;
+	height: 100%;
+}
+
+.lightBoxImg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-size: cover;
+	background-color: #fff;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+	
+@media all and (orientation: portrait) and (max-width : 740px) {
+
+	.lightBoxLeafWrapper {
+		max-height: 400px;
+	}
+
+}
+	
+@media all and (min-width : 741px) {
+
+	.lightBoxOverlay {
+		padding: 85px 60px 30px;
+	}
+
+	.lightBoxLeafWrapper {
+		max-height: 900px;
+	}
+
+	.lightBoxClose {
+		width: 50px;
+		height: 50px;
+	}
+
+	.lightBoxClose i {
+		font-size: 24px;
+		line-height: 50px;
+	}
+
+}

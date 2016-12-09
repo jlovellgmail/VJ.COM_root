@@ -1,0 +1,83 @@
+/* 
+ * 	Customized for Virgil James - Owl Carousel CSS File
+ */
+ 
+.owl-theme .owl-controls {
+  position: absolute;
+  width: 100%;
+  top: 74.5%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-controls .owl-nav [class*='owl-'] {
+  position: absolute;
+  color: #fff;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.owl-theme .owl-controls .owl-nav [class*='owl-']:hover {
+  /*color: #000;*/
+  text-decoration: none;
+  }
+.owl-theme .owl-controls .owl-nav .owl-prev {
+  margin-left: 30px;
+  left: 0;
+}
+.owl-theme .owl-controls .owl-nav .owl-next {
+  margin-right: 30px;
+  right: 0;
+}
+.owl-theme .owl-controls .owl-nav .disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  margin: 5px 8px;
+  background: #fff;
+  display: block;
+  -webkit-backface-visibility: visible;
+  border-radius: 60px;
+  box-shadow: 0 2px 5px #000;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #797b7d;
+}
+
+.owl-dots {
+  display: inline-block;
+  width: auto;
+}
+
+@media all and (min-width : 551px) {
+  .owl-theme .owl-controls {
+    top: 40%;
+  }
+  .owl-theme .owl-controls .owl-nav [class*='owl-'] {
+    position: absolute;
+    font-size: 32px;
+    color: #000;
+    margin: 0;
+  }
+  .owl-theme .owl-controls .owl-nav .owl-prev {
+    margin-right: 30px;
+    left: -45px;
+  }
+  .owl-theme .owl-controls .owl-nav .owl-next {
+    margin-left: 30px;
+    right: -45px; 
+  }
+}

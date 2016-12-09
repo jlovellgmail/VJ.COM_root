@@ -1,0 +1,333 @@
+/* ====== admin-nav ====== */
+
+.admin-nav {
+	position: relative;
+	display: block;
+}
+
+.admin-nav-primary {
+	position: relative;
+	display: block;
+	text-align: left;
+	background-color: #52504f;
+	height: 40px;
+	border-bottom: 2px solid #7d7b79;
+}
+
+.admin-nav-primary ul li {
+	position: relative;
+	display: inline-block;
+	padding: 0 15px;
+}
+
+.admin-button-primary {
+	color: #fff;
+}
+
+.admin-nav-primary li:first-child,
+.admin-nav-secondary li:first-child {
+	padding-left: 0;
+}
+
+.admin-button-primary {
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.admin-nav-primary li.active-nav .admin-button-primary {
+	color: #000;
+}
+
+.admin-nav-primary li.active-page {
+}
+
+.admin-nav-primary li.active-nav {
+	background-color: #f6f5f4;
+	color: #000;
+	padding: 0 15px;
+}
+
+.admin-nav-primary li.active-page .abp-button-span {
+	line-height: 16px;
+	border-bottom: 2px solid #fff;
+}
+
+.admin-nav-primary li.active-page.active-nav .abp-button-span {
+	border-bottom: 2px solid #000;
+}
+
+.admin-nav-secondary {
+	position: relative;
+	display: block;
+	text-align: left;
+	background-color: #f6f5f4;
+	border-bottom: 2px solid #e6e5e4;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.admin-nav-secondary ul li {
+	position: relative;
+	display: inline-block;
+	padding: 0 22px 0 0;
+	vertical-align: middle;
+}
+
+.admin-button-secondary {
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.admin-nav-secondary li.active-page {
+}
+
+.admin-nav-secondary li.active-page a {
+	border-bottom: 2px solid #000;
+	line-height: 16px;
+}
+
+.admin-nav-primary li button:hover {
+	
+}
+
+.admin-nav-secondary li a:hover {
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+
+
+@media all and (min-width : 585px) {
+
+	.admin-nav-secondary {
+		height: 40px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.admin-button-secondary {
+		line-height: 40px;
+	}
+
+	.admin-nav-secondary ul li {
+		padding: 0 15px;
+	}
+
+}
+
+/* ====== /admin-nav ====== */
+
+/* ====== admin elements ====== */
+
+.admin-content-wrapper {
+	padding-top: 40px;
+}
+
+@media all and (min-width : 376px) {
+
+	.admin-content-wrapper {
+		padding-top: 30px;
+	}
+
+}
+
+.backBtnWrapper {
+	margin-top: 5px;
+}
+
+@media all and (min-width : 421px) { .backBtnWrapper { padding-left: 13px; } }
+@media all and (min-width : 741px) { .backBtnWrapper { padding-left: 28px; } }
+
+
+.admin-panel-controls {
+	position: relative;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.admin-add-button {
+	position: relative;
+	display: inline-block;
+	background-color: #d8d7d7;
+	color: #403836;
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 40px;
+	min-width: 100px;
+	padding: 0 18px;
+	text-align: center;
+}
+
+.admin-add-button:link,
+.admin-add-button:visited {
+	color: #403836;
+}
+
+.admin-add-button:hover {
+	color: #000;
+	text-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2px;
+}
+
+.admin-add-button:active {
+	color: #403836;
+}
+
+/* ====== TinyMCE ======*/
+
+#tinymce a {
+	text-decoration: underline !important;
+}
+
+#tinymce p {
+	font-family: 'minion-pro-subhead', serif;
+	font-size: 18px;
+}
+
+/* ====== /TinyMCE ======*/
+
+.event-cards-wrapper {
+	position: relative;
+	display: block;
+}
+
+.event-card {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.event-date-bar {
+	position: relative;
+	display: block;
+	background-color: #52504f;
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	line-height: 40px;
+	padding: 0 15px;
+}
+
+.event-details-block {
+	position: relative;
+	display: block;
+	background-color: #e6e5e4;
+	padding: 15px;
+}
+
+.event-name {
+	position: relative;
+	display: block;
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.event-subname {
+	position: relative;
+	display: block;
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #000;
+	font-style: italic;
+}
+
+.event-details {
+	position: relative;
+	display: block;
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #52504f;
+	margin-bottom: 15px;
+}
+
+.event-image-preview {
+	background-image: url(/img/dev-static-lifestyle-gallery/horse.jpg);
+	margin-bottom: 15px;
+
+}
+
+.event-card-edit-btn {
+	position: relative;
+	display: block;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: right;
+}
+
+@media all and (min-width : 585px) {
+
+	.admin-add-button {
+		padding: 0 30px;
+		min-width: 140px;
+	}
+
+	.event-card {
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+
+}
+
+/* ====== /admin elements ====== */
+
+/* ====== /collection template update === jcoughlin may 16 2016 ====== */
+.radioToggleArea{
+ text-align: left !important;
+ vertical-align:middle;
+ display:table;
+}
+
+.radioToggleArea > div{
+ text-align: left !important;
+ display:table-row;
+}
+
+.radioToggleArea > div > label{
+ text-align: left !important;
+ display:table-cell; 
+ margin-bottom:20px;  
+ width:50%; 
+ padding-left:30px; 
+ position:relative;
+}
+
+.radioToggleArea > div > label > input[type="radio"]{
+ text-align: left !important;
+ position:absolute; 
+ left:0; 
+ top:2px; 
+ vertical-align:top;
+}
+
+.modal-body .nav-tabs {
+ margin-left:-15px;
+ margin-right:-15px;
+}
+
+.modal-body .nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.modal-body .nav>li {
+    position: relative;
+    display: block;
+    margin-left: 15px;
+}
+
+.ui-sortable-handle{
+ cursor:move;
+}
+
+.ui-sortable-handle.ui-sortable-helper{
+	background-color:#ffffff;
+	border:1pxs olid #ccc;
+}

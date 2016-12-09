@@ -1,0 +1,21 @@
+.fullBG {
+	position: fixed;
+	background:
+		linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+		url(/img/slider/vj_classic_beach.jpg) no-repeat center 35%;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+}
+
+
+.shopItemsWrapper {
+	opacity: 0;
+}
+
+
+.lineProductsOpacity {
+	opacity: 1 !important;
+	transition: opacity 0.5s;
+}

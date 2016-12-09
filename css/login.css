@@ -1,0 +1,157 @@
+/*	Colors:							*/
+/*	green-gold:			#928b53		*/
+/*	grey:				#797b7d		*/
+/*	light green-gold:	#f1f0e9		*/
+/*	dark green-gold:	#5e5a36		*/
+/*									*/
+
+/*a:link { color: #797b7d; }
+a:visited { color: #797b7d; }*/
+
+.loginBgWrapper {
+	background: url(/img/bg/login_background.jpg) no-repeat center;
+	background-size: cover;
+	color: #fff;
+}
+
+.loginBgWrapper .widthWrapper {
+	padding-top: 64px;
+}
+
+.loginBgWrapper h1 {
+	margin-bottom: 8px;
+}
+
+.loginCol {
+	position: relative;
+	text-align: left;
+	border-bottom: 1px solid #fff;
+}
+
+.signupCol {
+	padding-top: 42px;
+	position: relative;
+	text-align: left;
+}
+
+.loginBgWrapper input {
+	position: relative;
+	display: block;
+	color: #444;
+	margin-bottom: 16px;
+}
+
+.loginBgWrapper input:not([type=submit]) {
+	box-shadow: inset 0;
+	padding: 4px;
+	font-family: 'proxima-nova', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.loginBgWrapper form .lastFormItem {
+	margin-bottom: 24px;
+}
+
+.loginBgWrapper input:last-child {
+	margin-bottom: 42px;
+}
+
+.loginBgWrapper label {
+	position: relative;
+	display: block;
+	font-family: 'proxima-nova', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
+.loginBgWrapper .textField {
+	width: 100%;
+}
+
+.loginBgWrapper .submitButton {
+	font-family: 'proxima-nova', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 12px;
+	background-color: transparent;
+	border: solid 1px #fff;
+	color: #fff;
+	padding: 8px 28px;
+	border-radius: 0;
+}
+
+
+/* ====== Media Queries ====== */
+
+@media all and (orientation : landscape) and (max-width : 740px) {
+
+}
+
+@media all and (orientation : portrait) and (max-width : 420px) {
+
+}
+
+@media all and (min-width : 421px) {
+
+	.loginBgWrapper .textField {
+		width: 100%;
+	}
+
+}
+
+@media all and (min-width : 741px) {
+
+	.loginBgWrapper {
+		background-attachment: fixed;
+	}
+
+	.loginCol {
+		border-bottom: 0;
+		padding-left: 12.5%;
+		padding-right: 80px;
+	}
+
+	.signupCol {
+		padding-top: 0;
+		padding-left: 80px;
+		padding-right: 12.5%;
+	}
+
+	.loginBgWrapper h1,
+	.loginBgWrapper input {
+		margin-bottom: 24px;
+	}
+
+	.loginBgWrapper input:not([type=submit]) {
+	}
+
+	.loginBgWrapper label {
+		margin-bottom: 6px;
+	}
+
+	.loginBgWrapper .textField {
+	}
+
+	.loginBgWrapper .submitButton {
+		font-size: 14px;
+		padding: 12px 42px;
+	}
+
+	.loginBgWrapper form .lastFormItem {
+		margin-bottom: 42px;
+	}
+
+	.loginBgWrapper input:last-child {
+		margin-bottom: 0;
+	}
+
+}
+
+@media all and (orientation : landscape) and (min-width : 741px), all and (orientation : portrait) and (min-width : 421px) {
+
+}

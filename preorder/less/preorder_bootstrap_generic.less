@@ -1,0 +1,1259 @@
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
+// global
+
+@iconWidth: 90px;
+@headerHeight: 76px;
+@headerHeightSmall: 76px;
+body {
+	height: 100%;
+}
+.noPadding {
+	padding: 0;
+}
+.vjWidth {
+	width: calc(~"100% - 95px - 95px");
+	margin-left: auto;
+	margin-right: auto;
+}
+.vjHeadline1 {
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: inline-block;
+}
+.vjRowTopMargin {
+	margin-top: 40px;
+}
+.bodyCopy {
+	color: rgba(0, 0, 0, 0.9);
+	max-width: 530px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 26px;
+	display: inline-block;
+}
+.vjSectionHeading {
+	text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: initial;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+.page {
+    width: 100%;
+	font-family: proxima-nova, sans-serif;
+	margin-top: @headerHeight;
+}
+.widthWrapper {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 200px;
+}
+@media (min-width: 0px) {
+	.widthWrapper {
+		width: 100%;
+	}
+}
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
+// header / nav
+
+.headerText {
+	color: rgba(0,0,0, .4);
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: .5px;
+	text-rendering: geometricPrecision;
+	font-weight: 600;
+}
+.headerContainer {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 18;
+	transition: top 0.17s ease-in-out;
+	&.headerUp {
+		top: calc( -1 * (@headerHeight + 2) );
+	}
+	.navWidthWrapper {
+		position: relative;
+		display: block;
+		width: calc(~"100% - 15px - 15px");
+		height: 100%;
+		margin: 0 auto;
+		text-align: left;
+		.headerHeightWrapper {
+			height: @headerHeight;
+			padding-top: 9px;
+			.logoWrapper {
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+				display: inline-block;
+				margin-left: 15px;
+				.logoLink {
+					position: relative;
+					display: block;
+					text-align: left;
+					height: 100%;
+					.navLogo {
+						position: relative;
+						padding-top: 17px;
+						width: 209px;
+					}
+				}
+			}
+			.rightItemsContainer {
+				position: absolute;
+			    right: 0;
+				top: 29px;
+				margin-right: 15px;
+				.desktopLinksContainer {
+					.headerText;
+					.textLinksContainer {
+					    display: inline-block;
+						margin-right: 4px;
+						a {
+							margin-right: 16px;
+						}
+					}
+					.iconWrapper {
+						position: relative;
+						display: inline-block;
+						text-align: center;
+						height: 100%;
+						margin-left: 5px;
+					}
+				}
+				.burgerContainer {
+					right: 0;
+					display: none;
+					.icon-menu {
+						opacity: 0;
+						transition: opacity .25s ease-in-out;
+						&.visible {
+							opacity: 1;
+						}
+						font-size: 24px;
+					    position: absolute;
+					    right: 0;
+					    top: -1px;
+					}
+					.icon-cancel {
+						opacity: 0;
+						transition: opacity .25s ease-in-out;
+						&.visible {
+							opacity: 1;
+						}
+						font-size: 30px;
+					    top: -4px;
+					    position: absolute;
+					    right: -4.5px;
+					}
+				}
+			}
+		}
+		.dropdown {
+			display: block;
+			position: relative;
+			max-height: 0;
+			transition: max-height 0.5s;
+			overflow: hidden;
+			width: 100%;
+			left: 0;
+			background-color: white;
+			&.visible {
+				max-height: 300px;
+			}
+			.dropdownLinksContainer {
+				.headerText;
+				font-size: 17px;
+				padding: 15px;
+				padding-top: 0;
+				padding-bottom: 10px;
+				text-align: right;
+				.textLinksContainer {
+					display: block;
+					a {
+						display: block;
+						padding-bottom: 20px;
+					}
+				}
+				.iconWrapper {
+					display: block;
+				}
+			}
+		}
+		.bottomBorder {
+			height: 1px;
+			border-bottom: 1px solid rgba(0,0,0, .17);
+			position: relative;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+}
+@media all and (min-width: 1200px) {
+	.headerContainer {
+		.navWidthWrapper {
+			width: calc(~"100% - 95px - 95px");
+			.logoWrapper {
+				margin-left: auto;
+			}
+			.rightItemsContainer {
+				margin-right: auto;
+			}
+		}
+	}
+}
+@media all and (max-width: 768px){
+	.headerContainer {
+		.navWidthWrapper {
+			.headerHeightWrapper {
+				height: @headerHeightSmall;
+				.logoWrapper {
+					.logoLink {
+						.navLogo {
+							
+							width: 195px;
+							padding-top: 19px;
+
+						}
+					}
+				}
+				.rightItemsContainer {
+				    top: 23px;
+					.desktopLinksContainer {
+						display: none;
+					}
+					.burgerContainer {
+						display: initial;
+					}
+				}
+			}
+		}
+	}
+}
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
+// footer
+
+@footerHeight: 86px;
+.footerText {
+	.headerText;
+	color: rgba(0,0,0, .4);
+}
+.footerContainer {
+	background-color: white;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	height: @footerHeight;
+    padding-top: 24px;
+	.footerText;
+    a {
+    	.footerText;
+    }
+    button {
+    	.footerText;
+    }
+	.leftFooterColumn {
+		width: auto;
+		position: absolute;
+	    left: 95px;
+	    .socialIcons {
+			img {
+				bottom: 1px;
+				position: relative;
+	    	}
+	    }
+	}
+	.rightFooterColumn {
+		width: auto;
+		position: absolute;
+		right: 95px;
+	}
+	.footerLink {
+		&:hover {
+			color: rgba(0,0,0, .7);
+		}
+	}
+	.socialIcons {
+		color: red;
+		&:hover {
+			color: rgba(0,0,0, .7);
+		}
+	}
+}
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
+// modals
+
+.modalOverlay {
+	background-color: rgba(255,255,255, .9);
+	z-index: 30;
+	padding: 0;
+}
+.modalOverlay:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0, .15);
+}
+.modalContainer {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	.title {
+		text-transform: uppercase;
+		font-size: 26px;
+		font-weight: 500;
+		letter-spacing: .5px;
+		line-height: initial;
+		margin-bottom: 30px;
+	}
+}
+.modalWindow {
+	position: absolute;
+	left: 50%;
+	top: 47%;
+	transform: translate(-50%, -50%);
+	padding: 30px;
+	min-width: 600px;
+    min-height: 500px;
+    display: table;
+	.modalClose {
+		top: 0px;
+		right: 0px;
+		margin-top: 15px;
+		margin-right: 15px;
+		.closeButton {
+			content: url("/preorder/images/x.svg");
+		    width: 15px;
+		    height: 15px;
+		    opacity: .5;
+		}
+	}
+	.contentContainer {
+		display: table-cell;
+		vertical-align: bottom;
+		padding-bottom: 40px;
+		#injectModal {
+			div:first-of-type {
+				display: inline-block;
+			}
+		}
+	}
+	.modalWrapper-contact {
+		.title {
+			text-transform: uppercase;
+			font-size: 26px;
+			font-weight: 500;
+			letter-spacing: .5px;
+			line-height: initial;
+			margin-bottom: 30px;
+		}
+		.box {
+			border: 1px solid rgba(0,0,0, .4);
+			padding: 70px;
+			padding-bottom: 66px;
+			.row {
+				padding-bottom: 11px;
+				.label {
+					font-weight: bold;
+					display: inline-block;
+					text-align: right;
+				    vertical-align: top;
+			        width: 80px;
+				}
+				.copy {
+					display: inline-block;
+					width: 230px;
+					text-align: left;
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 741px) {
+	.modalWindow {
+		box-shadow: 0 0 5px 2px rgba(0,0,0, .15);
+	}
+}
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
+// About page
+
+.aboutPage {
+	&.bg1 {
+		.landingFrame {
+			.mainFrame {
+				background-image: url("/preorder/images/about_hero3_IMG_8871.jpg");
+				.textBlockMain {
+				}
+			}
+		}
+	}
+	&.bg2 {
+		.landingFrame {
+			.mainFrame {
+				background-image: url("/preorder/images/about_hero2_7.jpg");
+				.textBlockMain {
+					top: 36%;
+					left: 54%;
+				}
+			}
+		}
+	}
+	&.bg3 {
+		.landingFrame {
+			.mainFrame {
+				background-image: url("/preorder/images/about_hero1_7.jpg");
+			}
+		}
+	}
+	display: block;
+	text-align: left;
+	.aspectRatio {
+		padding-bottom: 61%;;
+		height: 0;
+	}
+	.image {
+		background-color: rgba(0, 0, 0, 0.1);
+		height: 400px;
+		width: 100%;
+		display: inline-block;
+		vertical-align: top;
+		background-size: cover;
+		background-position-y: center;
+		.aspectRatio;
+		&#designPrinciples {
+			background-image: url("../images/techpacks_q6.jpg");
+		}
+		&#whatMakesUsUnique {
+			background-image: url("../images/IMG_5383_RT.jpg");
+		}
+		&#productCollections {
+		}
+		&#makingTheBest {
+			background-image: url("../images/label_with_edition_number_IMG_5437_RT.jpg");
+		}
+		&#qualityMaterials {
+			background-image: url("../images/drawstring top edge_q7.jpg");
+			background-position-y: 25%;
+			background-position-x: 30%;
+		}
+		&#theTeam {
+		}
+		&#buyingFromVirgilJames {
+		}
+	}
+	.sectionHeading {
+		.vjSectionHeading;
+		margin-bottom: 18px;
+	}
+    .headline {
+    	text-transform: uppercase;
+    	font-size: 80px;
+    	font-weight: 100;
+	    line-height: 73px;
+	    margin-bottom: 10px;
+    }
+    .copy {
+    	font-size: 20px;
+    	font-weight: 300;
+    	line-height: 31px;
+    }
+    .landingFrame {
+	    text-align: center;
+    	height: 100vh;
+    	.mainFrame {
+			margin: 0 96px;
+    		height: calc(~"100vh - 76px - 86px");
+    		top: 76px;
+    		position: relative;
+    		background-image: url("/preorder/images/about_hero3_IMG_8871.jpg");
+    		background-position-x: center;
+    		background-position-y: 70%;
+    		background-size: cover;
+    	    text-align: left;
+    	    overflow: hidden;
+    		.textBlockMain {
+    			color: white;
+    			max-width: 680px;
+    		    display: inline-block;
+    		    position: relative;
+    		    top: 50%;
+    		    transform: translateY(-50%);
+    		    margin: auto 18%;
+    		    .headline {
+    		    	font-size: 49px;
+    		    	line-height: 49px;
+    		    	margin-bottom: 21px;
+	    	        position: relative;
+    		    }
+    		    .copy {
+    		    	.bodyCopy;
+    		    	color: white;
+    		    	position: relative;
+    		    	max-width: 580px;
+    		    	display: inline-block;
+    		    	line-height: 31px;
+    		    	letter-spacing: .3px;
+    		    	font-weight: 200;
+    		    	font-size: 19px;
+    		    }
+    		}
+	    	.blackGlow {
+    			position: absolute;
+    			transform: translate(-50%, -50%);
+    			left: 34%;
+    			top: 51%;
+    			opacity: .3;
+	    	}
+    	}
+    	.downArrow {
+    		width: 37px;
+    		position: absolute;
+    		bottom: 25px;
+    		left: 50%;
+    		transform: translate(-50%, 0);
+    		opacity: .8;
+    		filter: none;
+    	}
+    }
+    .belowLandingFrame {
+    	margin-top: 70px;
+    	margin-bottom: 100px;
+    }
+}
+@media all and (max-width: 1200px){
+	body {
+		.aboutPage {
+			.landingFrame {
+				.mainFrame {
+					margin: 0;
+					height: calc(~"100vh - 76px");
+				}
+				.downArrow {
+					filter: invert(100%);
+				}
+			}
+			.belowLandingFrame {
+				.sectionHeading {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 768px){
+	body {
+		.aboutPage {
+			&.bg1{
+				.landingFrame {
+					height: auto;
+					margin-top: @headerHeightSmall;
+					.mainFrame {
+						height: auto;
+						background-image: none;
+						top: 0;
+						.textBlockMain {
+							color: black;
+							top: initial;
+							transform: none;
+							margin: 0 30px;
+							max-width: initial;
+							margin-top: 5px;
+							margin-bottom: 30px;
+							.headline {
+								.vjSectionHeading;
+								font-size: 31px;
+								line-height: initial;
+								margin-bottom: 13px;
+							}
+							.copy {
+								color: black;
+								line-height: 28px;
+								font-weight: 300;
+								font-size: 16px;
+								max-width: initial;
+							}
+						}
+					}
+					.downArrow {
+						display: none;
+					}
+			    	.blackGlow {
+			    		display: none;
+			    	}
+				}
+			}
+			.belowLandingFrame {
+				margin-top: 0;
+				.sectionHeading {
+					margin-top: 40px;
+					font-size: 31px;
+					margin-left: 15px;
+					margin-right: 15px;
+				}
+				.copy {
+					margin-left: 15px;
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
+// Landing page / Preorder page
+
+.preorderPage {
+    .landingFrame {
+	    text-align: center;
+    	min-height: calc(~"100vh - 86px");
+    	.mainFrame {
+    		text-align: left;
+    		margin: 0 96px;
+    		min-height: calc(~"100vh - 76px - 86px");
+    		top: 76px;
+    		position: relative;
+    		background-repeat: no-repeat;
+    		background-image: url("/preorder/images/tote_hero_whitebg_q7.jpg");
+    		background-position-x: -360px;
+    		background-position-y: calc(~"50% + 88px");
+    		background-size: 100%;
+    		.preorderText {
+    			color: black;
+    			width: 680px;
+    		    display: inline-block;
+    		    position: absolute;
+    		    text-align: center;
+    		    top: 41%;
+    		    right: 31%;
+    		    transform: translate(50%, -50%);
+    		    .headline {
+	    	        font-size: 32px;
+	    			text-transform: capitalize;
+	    			font-weight: 100;
+    			    color: rgba(0,0,0, .6);
+    		    }
+				.titleContainer {
+					text-align: center;
+					margin: 9px 0 9px 0;
+			    	.title {
+			    		color: black;
+	    		        font-size: 43px;
+			    		text-transform: uppercase;
+			    		text-rendering: geometricPrecision;
+			    		.part1 {
+			    			font-weight: 600;
+			    			display: inline-block;
+			    		}
+			    		.part2 {
+			    			font-weight: 100;
+			    			display: inline-block;
+			    			margin-left: 5px;
+			    		}
+			    	}
+			    }
+    		    .copy {
+    		    	max-width: 540px;
+    		    	font-size: 18px;
+    		    	font-weight: 300;
+    		    	line-height: 27px;
+    		    	display: inline-block;
+    		    }
+	    		.hline {
+	    			border-bottom: 1px solid rgba(0,0,0, .2);
+	    			height: 1px;
+	    			max-width: 550px;
+	    			margin-left: auto;
+	    			margin-right: auto;
+	    			margin-top: 30px;
+	    			margin-bottom: 30px;
+	    		}
+		    	.boxes {
+		    		text-align: center;
+		    		display: inline-block;
+		    		border: 1px solid black;
+		    		margin-top: 30px;
+		    		.vline {
+		    			width: 1px;
+		    			height: 100px;
+		    			border-left: 1px solid rgba(0,0,0, .2);
+		    			display: inline-block;
+		    			vertical-align: middle;
+		    		}
+		    		.box {
+		    			cursor: pointer;
+					    padding: 50px 0;
+					    vertical-align: middle;
+					    width: 212px;
+					    text-transform: uppercase;
+		    			color: black;
+		    			display: inline-block;
+					    transition: .3s;
+					    font-size: 22px;
+					    font-weight: 800;
+					    letter-spacing: .7px;
+					    text-rendering: geometricPrecision;
+					    .title {
+					    	display: inline-block;
+					    }
+					    .subtitle {
+					    	font-size: 12px;
+					    	text-transform: uppercase;
+					    	font-weight: 500;
+					    	letter-spacing: .8px;
+					    	margin-top: 2px;
+					    }
+					    &:hover {
+				    	    background-color: rgba(255, 255, 255, 0.2);
+					    }
+		    		}
+		    	}
+    		}
+    	}
+    }
+}
+@media all and (max-width: 1000px) {
+	.preorderPage {
+		.landingFrame {
+			.mainFrame {
+				margin: 0;
+				min-height: calc(~"100vh - 76px");
+				background: none;
+				.preorderText {
+					width: 100%;
+					top: initial;
+					right: initial;
+					transform: initial;
+					margin-top: 24px;
+					position: relative;
+					.headline {
+						font-size: 30px;
+					}
+					.titleContainer {
+						display: none;
+						margin: 0;
+						.title {
+							font-size: 24px;
+						}
+					}
+					.copy {
+						display: none;
+					}
+					.boxes {
+						margin-top: 10px;
+						border-color: rgba(0,0,0, .6);
+						.box {
+							width: 150px;
+							font-size: 19px;
+							padding: 20px 23px;
+							.subtitle {
+								margin-top: 0;
+								position: relative;
+								top: -3px;
+							}
+						}
+						.box:nth-of-type(1) {
+							padding-right: 16px;
+						}
+						.box:nth-of-type(2) {
+							padding-left: 16px;
+						}
+						.vline {
+							height: 50px;
+						}
+					}
+				}
+				.imageWrapper {
+					display: block;
+					width: 100%;
+					padding-bottom: 120%;
+					height: 0;
+					background-image: url(/preorder/images/tote_hero_whitebg_q7.jpg);
+					background-size: 170%;
+					margin-top: 30px;
+					background-position-x: 53%;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+		.footerContainer {
+			display: none;
+		}
+	}
+}
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
+// Collection page
+
+.collectionPage {
+	min-height: 100%;
+	top: 76px;
+	position: relative;
+	.widthWrapper {
+		width: 1170px;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.topRow {
+		min-height: 40px;
+		text-align: left;
+		padding-left: 92px;
+		.headline {
+			margin-top: 60px;
+			color: black;
+		    font-size: 36px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			.part1 {
+				.vjHeadline1;
+			}
+			.part2 {
+				.vjHeadline1;
+				font-weight: 100;
+				margin-left: 8px;
+			}
+		}
+		.text {
+			color: rgba(0,0,0, .9);
+			max-width: 530px;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 30px;
+			margin-top: 13px;
+			display: inline-block;
+		}
+	}
+	.item {
+		width: 33%;
+		display: inline-block;
+		position: relative;
+		img {
+			width: 100%;
+		}
+		.caption {
+			text-align: left;
+			position: absolute;
+			bottom: 0;
+			left: 98px;
+			font-size: 16px;
+			.title {
+				text-transform: uppercase;
+				font-weight: 700;
+				letter-spacing: .5px;
+			}
+			.price {
+				font-weight: 100;
+			}
+		}
+	}
+}
+@media all and (max-width: 740px) {
+	body {
+		.collectionPage {
+			.topRow {
+				.headline {
+					font-size: 36px;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 630px) {
+	body {
+		.collectionPage {
+			.topRow {
+				.headline {
+					font-size: 27px;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width: 1170px) {
+	.collectionPage {
+		.widthWrapper {
+			width: 780px;
+		}
+		.item {
+			width: 49%;
+		}
+	}
+}
+@media all and (max-width: 780px) {
+	.collectionPage {
+		.topRow {
+			padding-left: 34px;
+			padding-right: 34px;
+		}
+		.item {
+			width: 100%;
+		}
+	}
+}
+
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
+// product page
+
+.productPage {
+	.widthWrapper {
+		max-width: 1170px;
+	}
+	.productImageContainer {
+		display: inline-block;
+		vertical-align:top;
+	}
+	.productDescriptionContainer {
+		display: inline-block;
+	    margin-left: 50px;
+	    margin-top: 9px;
+	    width: 410px;
+	    text-align: left;
+	    padding-right: 20px;
+	}
+	.collection {
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+	.collection2 {
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+	.productTitle {
+		.vjHeadline1;
+		margin-top: 10px;
+	}
+	.productPrice {
+		font-size: 22px;
+		text-transform: uppercase;
+		font-weight: 100;
+	}
+	.productDescription {
+		.bodyCopy;
+		margin-top: 12px;
+	}
+	.addToCartButton {
+		background-color: black;
+		padding: 12px;
+		color: white;
+		font-size: 17px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-top: 20px;
+		display: inline-block;
+	}
+	.breadcrumb {
+		display: none;
+	    width: 100%;
+	    margin: 0 auto 0 auto;
+	    text-align: left;
+	    padding-top: 10px;
+	    letter-spacing: -.03pt;
+		a {
+	    	color: rgba(0,0,0, .4);
+			font-size: 13px;
+			&:before { 
+			    content: " > ";
+			    opacity: .5;
+			}
+			&.first {
+				&:before {
+					content: "";
+				}
+			}
+		}
+		.hline {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			margin-top: 8px;
+			margin-bottom: 0;
+		}
+	}
+	.rowTop {
+	    padding-top: 80px;
+	    padding-bottom: 29px;
+	}
+	.rowSlides {
+		margin-top: 30px;
+		display: none;
+	}
+	.slider {
+		width: 950px;
+		position: relative;
+		display: inline-block;
+		img {
+			display: inline-block;
+			&.arrow {
+				height: 40px;
+			    position: absolute;
+			    top: 50%;
+			    margin: 0;
+			    &.left {
+			    	left: 0;
+			    	transform: translateY(-50%);
+			    }
+			    &.right {
+			    	right: 0;
+			    	transform: translateY(-50%) scaleX(-1);
+			    }
+			}
+			&.slide {
+				width: 140px;
+			}
+		}
+	}
+	.rowDetails {
+		font-family: proxima-nova, sans-serif;
+	    margin-top: 10px;
+		.blurb {
+			display: inline-block;
+			width: 459px;
+			text-align: left;
+			vertical-align: top;
+			.heading {
+			    .vjSectionHeading;
+			}
+		}
+		.specs {
+			margin-top: 53px;
+			display: inline-block;
+			text-align: left;
+			margin-left: 50px;
+			vertical-align: top;
+			width: 410px;
+			.section {
+				margin-bottom: 20px;
+			}
+			.heading {
+			    .vjSectionHeading;
+			    font-size: 18px;
+			    font-weight: 800;
+			    margin: 0;
+			}
+		}
+	}
+	.featuresSection {
+	    margin-top: 40px;
+		.featuresContainer {
+		    background-color: rgba(0,0,0, .03);
+		    width: 930px;
+		    margin: 0 auto;
+	        padding-top: 20px;
+	    	padding-bottom: 30px;
+		    .hline {
+	    	    width: calc(~"100% - 80px");
+			    border-bottom: 1px solid rgba(0,0,0, .1);
+			    display: inline-block;
+			}
+		    .feature {
+			    padding: 30px;
+			    display: inline-block;
+				.iconFrame {
+					display: inline-block;
+					vertical-align: top;
+			    	width: 240px;
+					.heading {
+						text-transform: uppercase;
+						font-weight: 800;
+					    font-size: 18px;
+					    margin-top: 6px;
+					}
+					img {
+					    width: @iconWidth;
+					}
+				}
+				.bodyCopy {
+					width: 430px;
+					margin-top: 7px;
+					display: inline-block;
+					text-align: left;
+					margin-left: 40px
+				}    	
+		    }
+		}
+	}
+}
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
+// Terms page
+
+.termsPage {
+	padding-top: 76px;
+	text-align: center;
+	display: inline-block;
+	min-height: calc(~"100vh - 86px");
+	.contentContainer {
+	    padding-top: 60px;
+	    padding-bottom: 130px;
+		max-width: 1060px;
+		text-align: left;
+		.headline {
+	        .vjSectionHeading;
+	        padding-left: 220px;
+	        margin-bottom: 32px;
+		}
+		.navCol {
+			width: 170px;
+			display: inline-block;
+			text-align: right;
+			vertical-align: top;
+			text-transform: uppercase;
+			margin-top: 5px;
+		    ul {
+		    	padding-right: 23px;
+		    	border-right: 1px solid rgba(0,0,0, .2);
+		    	li {
+		    		margin-bottom: 14px;
+		    		&.active-term-link {
+		    			font-weight: bold;
+		    			text-decoration: underline;
+		    		}
+		    		&.bottomLink {
+		    			margin-bottom: 0;
+		    		}
+		    	}
+		    	a {
+		    		cursor: pointer;
+		    	}
+		    }
+		}
+		.contentCol {
+			display: inline-block;
+			width: calc(~"100% - 170px - 170px");
+			text-align: left;
+		    padding: 0 10px 0 50px;
+		    .title {
+		    	font-size: 30px;
+		    	font-weight: 600;
+		    	margin-bottom: 15px;
+		    	text-transform: uppercase;
+		    }
+		}
+		.rightCol {
+			width: 170px;
+		}
+	}
+}
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
+// Login page and forms
+
+@media all and (max-width: 870px) {
+	body {
+		.loginPage {
+			.mainFrame {
+				.contentContainer {
+					.leftColLogin {
+						display: block;
+					}
+					.middleColLogin {
+						display: none;
+					}
+					.rightColLogin {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+.loginPage {
+	.mainFrame {
+		margin: 0 96px;
+		top: 76px;
+		min-height: calc(~"100vh - 86px");
+		position: relative;
+		padding-top: 70px;
+		text-align: center;
+	    .contentContainer {
+	    	display: inline-block;
+	    	.leftColLogin {
+	    		display: inline-block;
+	    		vertical-align: top;
+	    		width: 280px;
+	    	}
+	    	.middleColLogin {
+	    		display: inline-block;
+	    		width: 50px;
+	    	}
+	    	.rightColLogin {
+	    		display: inline-block;
+	    		vertical-align: top;
+	    		width: 280px;
+	    	}
+	    }
+	}
+}
+.loginForm {
+	.title {
+		text-transform: uppercase;
+		font-size: 26px;
+		font-weight: 500;
+		letter-spacing: .5px;
+		line-height: initial;
+		text-align: left;
+	}
+}
+.signupForm {
+	.title {
+		text-transform: uppercase;
+		font-size: 26px;
+		font-weight: 500;
+		letter-spacing: .5px;
+		line-height: initial;
+		text-align: left;
+	}	
+}
+
+
+
+
+
+
+
+
+
+

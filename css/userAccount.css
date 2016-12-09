@@ -1,0 +1,125 @@
+.userAccountBanner .userAccountNav { text-align: left; }
+
+.userAccountBanner .userAccountNav a {
+ position: relative;
+ display: inline-block;
+ width: auto;
+ height: auto;
+ font-family: 'proxima-nova', sans-serif;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 12px;
+ text-transform: uppercase;
+ color: #fff;
+ line-height: 24px;
+ border: 1px solid #fff;
+ text-shadow: 0 1px 2px #4f5052;
+ box-shadow: rgba(0, 0, 0, 0.15) 0 4px 4px, inset rgba(0, 0, 0, 0.15) 0 4px 4px;
+ text-align: center;
+ margin-right: 30px;
+ margin-top: 30px;
+ padding: 6px 14px;
+}
+
+.userAccountBanner .userAccountNav.tight a {
+ margin-top: 15px;
+ padding: 6px 14px;
+}
+
+.userAccountBanner .userAccountNav a.active {
+ background-color: rgba(255, 255, 255, 0.3);
+ text-shadow: 0 1px 2px #4f5052;
+}
+
+.userAccountBanner .userAccountImage {
+ background-repeat: no-repeat;
+ background-position: 50% 50%;
+ border-bottom-right-radius: 45px;
+ -webkit-border-bottom-right-radius: 45px;
+ -moz-border-radius-bottomright: 45px;
+}
+
+.userAccountBanner .userAccountImage {
+ float: left;
+ margin-right: 30px;
+ position: relative;
+}
+
+.userAccountBanner .userAccountImage .ambImg {
+ position: absolute;
+ left: 10px;
+ top: 10px;
+ z-index: 2;
+}
+
+.userAccountBanner .userAccountImage .ambCardSq {
+ position: relative;
+ z-index: 2;
+}
+
+.ambCardSq.ambCardSq240 {
+ width: 240px;
+ height: 240px;
+}
+
+@media (max-width: 850px) {
+ .userAccountBanner,
+ .userAccountBanner .userAccountNav { text-align: center; }
+
+ .userAccountNav { margin-top: 15px; }
+
+ .userAccountBanner .userAccountNav a {
+  border: none;
+  margin-bottom: 0;
+  min-width: 80px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+ }
+
+ .userAccountBanner .userAccountNav a.active {
+  background-color: transparent;
+  text-shadow: 0 1px 2px #4f5052;
+  text-decoration: underline;
+ }
+
+ .userAccountBanner .userAccountImage {
+  float: none;
+  position: relative;
+  width: auto;
+  display: inline-block;
+  margin-bottom: 15px;
+ }
+
+ .userAccountTitle {
+  text-align: center !important;
+ }
+
+ .hidden-user-nav {
+  display: none;
+ }
+
+}
+
+.userAccountSubNav ul{
+ text-transform: uppercase;
+ margin:15px 0 42px 0;
+ text-align:left;
+ padding-left:48px;
+}
+
+.userAccountSubNav ul li{
+ display:inline-block;
+ margin-right:60px;
+ padding-bottom:20px;
+}
+
+div.userAccountSubNav ul li.active a{
+ font-weight:bold;
+ text-decoration: underline;
+}
