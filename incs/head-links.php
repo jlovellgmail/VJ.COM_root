@@ -25,3 +25,6 @@
 <link rel="stylesheet" href="/css/navigation.css">
 <link rel="stylesheet" href="/css/forms.css">
 <link rel="stylesheet" href="/css/animate.css">
+
+<!-- JL -->
+<link rel="stylesheet" href="/css/preorder_com.css">
