@@ -18,54 +18,66 @@ include '/classes/Line.class.php';
     
 </head>
 <body>
-<div class="sdWrapper">
-<div class="sdContent">
+    <?php include '/incs/nav.php'; ?>
 
-<?php include '/incs/nav.php'; ?>
 
-    <!-- <div class="bgWrapperLeaf h100vh-landing"> -->
-    <div class="bgWrapperLeaf" style='height: calc(100vh - 56px);'>
-        <div class="landingLeafWrapper collectionsLeafWrapper">
-            <!-- <div class='collectionShim' style='position: fixed; left: calc(50% - 1px); width: 1px; top: 0; height: 85px; background: linear-gradient(to bottom, rgba(150,150,150,1) 0px,rgba(150,150,150,1) 56px,rgba(255,255,255,1) 85px);'></div>
-            <div class='collectionShim' style='position: absolute; left: calc(50% - 1px); width: 1px; bottom: 0; height: 85px; background: linear-gradient(to top, rgba(150,150,150,1) 0px,rgba(150,150,150,1) 56px,rgba(255,255,255,1) 85px);'></div> -->
-            <div class="collectionWrapperLeft xs-twelve">
-                <div class="collectionPanel classicPanel">
-                    <div class="tableWrapper h100p" style='padding-top: 30px;'>
-                        <div class="cellWrapper">
-                            <div class='collection-title-span-wrapper rel block'><span class="heroText caps size4 fw-600 spaceLetters">Cityline </span><span class="heroText caps size4 fw-300 spaceLetters">Collections</span></div>
-                                <div class='rel block marBottom15'><a class='rel borderBtn borderBtnGrey caps' style='min-width: 175px; padding: 0 20px;' href="http://www.virgiljames.net/collection/index.php?line=city&col=reykjavik">Reykjavik</a></div>
-                                <div class='rel block marBottom15'><a class='rel borderBtn borderBtnGrey caps' style='min-width: 175px; padding: 0 20px;' href="http://www.virgiljames.net/collection/index.php?line=city&col=santa-fe">Santa Fe</a></div>
-                                <div class='rel block marBottom15'><a class='rel borderBtn borderBtnGrey caps' style='min-width: 175px; padding: 0 20px;' href="http://www.virgiljames.net/collection/index.php?line=city&col=buenos-aires">Buenos Aires</a></div>
+
+
+    <div class="preorderPage bg-whiter">
+        <div class="landingFrame">
+            <div class="mainFrame">
+                <div class="backgroundContainer">
+                </div>
+
+                <div class="contentContainer">
+                    <div class="preorderText">
+                        <div class="headline">
+                            Early Access
                         </div>
-                    </div>
-                    <!-- <div class="collectionButtonsWrapper">
-                        <div class="tableWrapper h100p">
-                            <div class="cellWrapper">
-                                <a href="http://www.virgiljames.net/collection/index.php?line=city&col=reykjavik" class="borderBtn caps">Explore</a>
+                        <div class="titleContainer">
+                            <div class="title">
+                                <div class="part1">Cityline</div><div class="part2">Collections</div>
                             </div>
                         </div>
-                    </div> -->
-                </div>
-            </div><!-- <div class="collectionWrapperRight lg-six">
-                <div class="collectionPanel cityPanel">
-                    <div class="tableWrapper h100p">
-                        <div class="cellWrapper">
-                            <span class="heroText caps size4 fw-600 spaceLetters">Moderne </span><span class="heroText caps size4 fw-300 spaceLetters">Collections</span><br /><br />
-                            <div class='rel block marBottom15'><a class='rel borderBtn borderBtnGrey caps' style='min-width: 175px; padding: 0 20px;' href="http://www.virgiljames.net/collection/index.php?line=classic&col=canvas">Classic Canvas</a></div>
-                            <div class='rel block marBottom15'><a class='rel borderBtn borderBtnGrey caps' style='min-width: 175px; padding: 0 20px;' href="http://www.virgiljames.net/collection/index.php?line=classic&col=cashmere">Cashmere Felt</a></div>
-                            <div class='rel block marBottom15'><a class='rel borderBtn borderBtnGrey caps' style='min-width: 175px; padding: 0 20px;' href="http://www.virgiljames.net/collection/index.php?line=classic&col=signature">Signature</a></div>
+                        <div class="copy">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lorem nulla, non finibus lacus interdum eu. Nam et ligula efficitur, volutpat tortor sed, pulvinar leo. Vestibulum condimentum nisl augue, ut mollis nunc tempus vel. In sed felis tellus.
+                        </div>
+                        <div class="boxes">
+                            <a class="box" href="http://www.virgiljames.com/collection/index.php?line=city&col=reykjavik">
+                                <div class="title">
+                                    Reykjavik
+                                </div>
+                                <div class="subtitle">
+                                    Collection
+                                </div>
+                            </a>
+                            <div class="vline">
+                            </div>
+                            <a class="box" href="http://www.virgiljames.com/collection/index.php?line=city&col=santa-fe">
+                                <div class="title">
+                                    Santa Fe
+                                </div>
+                                <div class="subtitle">
+                                    Collection
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div> -->
+                <div class="imageWrapper">
+                </div>
+            </div>
         </div>
+        <?php include "/incs/footer.php"; ?>
     </div>
 
-    </div>
+
+
+
+
     <?php include '/incs/footer.php'; ?>
-
+    
     <!-- Common .js Includes -->
     <?php include '/incs/footer-links.php'; ?>
-</div>
 </body>
 </html>

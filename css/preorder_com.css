@@ -1,0 +1,470 @@
+.preorderPage.bg-whiter .landingFrame {
+  padding-top: 76px;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame {
+  background-image: none;
+  top: 0;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer {
+  background-repeat: no-repeat;
+  background-image: url("/img_preorder/IMG_6948_tote_hero_whiter_bg_q7.jpg");
+  background-position: right 50% top 20px;
+  background-position-x: calc(50% - 200px);
+  background-size: contain;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 50%;
+  background-position-x: right;
+  min-height: 100px;
+  height: 100%;
+  background-position-y: calc(50% - -20px);
+  max-height: 650px;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  max-height: 550px;
+  padding-top: 20px;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText {
+  color: black;
+  position: absolute;
+  text-align: center;
+  top: 41%;
+  width: 510px;
+  display: inline-block;
+  left: 0;
+  right: initial;
+  transform: translate(0, -50%);
+  top: initial;
+  transform: none;
+  display: table;
+  vertical-align: middle;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .headline {
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.6);
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .titleContainer {
+  text-align: center;
+  margin: 9px 0 9px 0;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .titleContainer .title {
+  color: black;
+  font-size: 43px;
+  text-transform: uppercase;
+  text-rendering: geometricPrecision;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .titleContainer .title .part1 {
+  font-weight: 600;
+  display: inline-block;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .titleContainer .title .part2 {
+  font-weight: 100;
+  display: inline-block;
+  margin-left: 5px;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .copy {
+  max-width: 540px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  display: inline-block;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .hline {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  height: 1px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes {
+  text-align: center;
+  display: inline-block;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes .vline {
+  width: 1px;
+  height: 100px;
+  border-left: 1px solid rgba(0, 0, 0, 0.16);
+  display: inline-block;
+  vertical-align: middle;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes .box {
+  cursor: pointer;
+  padding: 50px 0;
+  vertical-align: middle;
+  width: 212px;
+  text-transform: uppercase;
+  color: black;
+  display: inline-block;
+  transition: .3s;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .7px;
+  text-rendering: geometricPrecision;
+  text-decoration: none;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes .box .title {
+  display: inline-block;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes .box .subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .8px;
+  margin-top: -4px;
+}
+.preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes .box:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.preorderPage .landingFrame {
+  text-align: center;
+  min-height: calc(100vh - 86px);
+}
+.preorderPage .landingFrame .mainFrame {
+  text-align: left;
+  margin: 0 96px;
+  min-height: calc(100vh - 76px - 86px);
+  top: 76px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("/preorder/images/tote_hero_whitebg_q7.jpg");
+  background-position-x: -360px;
+  background-position-y: calc(50% + 88px);
+  background-size: 100%;
+}
+.preorderPage .landingFrame .mainFrame .preorderText {
+  color: black;
+  width: 680px;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  top: 41%;
+  right: 31%;
+  transform: translate(50%, -50%);
+}
+.preorderPage .landingFrame .mainFrame .preorderText .headline {
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.6);
+}
+.preorderPage .landingFrame .mainFrame .preorderText .titleContainer {
+  text-align: center;
+  margin: 9px 0 9px 0;
+}
+.preorderPage .landingFrame .mainFrame .preorderText .titleContainer .title {
+  color: black;
+  font-size: 43px;
+  text-transform: uppercase;
+  text-rendering: geometricPrecision;
+}
+.preorderPage .landingFrame .mainFrame .preorderText .titleContainer .title .part1 {
+  font-weight: 600;
+  display: inline-block;
+}
+.preorderPage .landingFrame .mainFrame .preorderText .titleContainer .title .part2 {
+  font-weight: 100;
+  display: inline-block;
+  margin-left: 5px;
+}
+.preorderPage .landingFrame .mainFrame .preorderText .copy {
+  max-width: 540px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  display: inline-block;
+}
+.preorderPage .landingFrame .mainFrame .preorderText .hline {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  height: 1px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.preorderPage .landingFrame .mainFrame .preorderText .boxes {
+  text-align: center;
+  display: inline-block;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+.preorderPage .landingFrame .mainFrame .preorderText .boxes .vline {
+  width: 1px;
+  height: 100px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  vertical-align: middle;
+}
+.preorderPage .landingFrame .mainFrame .preorderText .boxes .box {
+  cursor: pointer;
+  padding: 50px 0;
+  vertical-align: middle;
+  width: 212px;
+  text-transform: uppercase;
+  color: black;
+  display: inline-block;
+  transition: .3s;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .7px;
+  text-rendering: geometricPrecision;
+  text-decoration: none;
+}
+.preorderPage .landingFrame .mainFrame .preorderText .boxes .box .title {
+  display: inline-block;
+}
+.preorderPage .landingFrame .mainFrame .preorderText .boxes .box .subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .8px;
+  margin-top: 2px;
+}
+.preorderPage .landingFrame .mainFrame .preorderText .boxes .box:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media all and (max-width: 1150px) {
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer {
+    max-height: 472px;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText {
+    width: 260px;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .headline {
+    font-size: 26px;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .titleContainer {
+    margin-top: 7px;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .titleContainer .title {
+    font-size: 32px;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .titleContainer .title .part1 {
+    display: block;
+    font-size: 61px;
+    line-height: 41px;
+    font-weight: 700;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .titleContainer .title .part2 {
+    display: block;
+    line-height: initial;
+    letter-spacing: initial;
+    font-size: 37px;
+    margin: 0;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .copy {
+    font-size: 16px;
+    display: none;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes {
+    margin-top: 0;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes .box {
+    padding: 30px;
+    display: block;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes .vline {
+    height: 1px;
+    border-left: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    width: auto;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media all and (max-width: 768px) {
+  .preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer {
+    background-position-y: top;
+    background-position-x: center;
+    top: initial;
+    transform: none;
+    margin-top: 190px;
+    height: 100%;
+    width: 100%;
+    max-height: 490px;
+    margin-top: 170px;
+    background-position-x: calc(50% - -7px);
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer {
+    position: initial;
+    width: auto;
+    height: auto;
+    right: initial;
+    top: initial;
+    transform: none;
+    max-height: initial;
+    padding-top: 0;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText {
+    width: 100%;
+    top: initial;
+    right: initial;
+    transform: initial;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 0;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .headline {
+    font-size: 30px;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .titleContainer {
+    display: none;
+    margin: 0;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .titleContainer .title {
+    font-size: 24px;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .copy {
+    display: none;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes {
+    margin-top: 10px;
+    border-color: rgba(0, 0, 0, 0.6);
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes .box {
+    width: 150px;
+    font-size: 19px;
+    padding: 20px 23px;
+    display: inline-block;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes .box .subtitle {
+    margin-top: 0;
+    position: relative;
+    top: -3px;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes .box:nth-of-type(1) {
+    padding-right: 16px;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes .box:nth-of-type(2) {
+    padding-left: 16px;
+  }
+  .preorderPage.bg-whiter .landingFrame .mainFrame .contentContainer .preorderText .boxes .vline {
+    height: 66px;
+    width: 1px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .preorderPage .landingFrame .mainFrame {
+    margin: 0;
+    min-height: calc(100vh - 76px);
+    background: none;
+  }
+  .preorderPage .landingFrame .mainFrame .preorderText {
+    width: 100%;
+    top: initial;
+    right: initial;
+    transform: initial;
+    margin-top: 24px;
+    position: relative;
+  }
+  .preorderPage .landingFrame .mainFrame .preorderText .headline {
+    font-size: 30px;
+  }
+  .preorderPage .landingFrame .mainFrame .preorderText .titleContainer {
+    display: none;
+    margin: 0;
+  }
+  .preorderPage .landingFrame .mainFrame .preorderText .titleContainer .title {
+    font-size: 24px;
+  }
+  .preorderPage .landingFrame .mainFrame .preorderText .copy {
+    display: none;
+  }
+  .preorderPage .landingFrame .mainFrame .preorderText .boxes {
+    margin-top: 10px;
+    border-color: rgba(0, 0, 0, 0.6);
+  }
+  .preorderPage .landingFrame .mainFrame .preorderText .boxes .box {
+    width: 150px;
+    font-size: 19px;
+    padding: 20px 23px;
+  }
+  .preorderPage .landingFrame .mainFrame .preorderText .boxes .box .subtitle {
+    margin-top: 0;
+    position: relative;
+    top: -3px;
+  }
+  .preorderPage .landingFrame .mainFrame .preorderText .boxes .box:nth-of-type(1) {
+    padding-right: 16px;
+  }
+  .preorderPage .landingFrame .mainFrame .preorderText .boxes .box:nth-of-type(2) {
+    padding-left: 16px;
+  }
+  .preorderPage .landingFrame .mainFrame .preorderText .boxes .vline {
+    height: 50px;
+  }
+  .preorderPage .landingFrame .mainFrame .imageWrapper {
+    /*
+					display: block;
+					width: 100%;
+					padding-bottom: 120%;
+					height: 0;
+					background-image: url(/preorder/images/tote_hero_whitebg_q7.jpg);
+					background-size: 170%;
+					margin-top: 30px;
+					background-position-x: 53%;
+					background-repeat: no-repeat;
+					*/
+    display: none;
+  }
+  .preorderPage .footerContainer {
+    display: none;
+  }
+}
+@media all and (max-width: 600px) {
+  .preorderPage.bg-whiter .landingFrame .mainFrame .backgroundContainer {
+    margin-top: 170px;
+    background-position-x: calc(50% - -7px);
+    max-height: 330px;
+  }
+}
+.preorderPage.v2 .landingFrame .mainFrame .preorderText {
+  margin-top: 21px;
+}
+.preorderPage.v2 .landingFrame .mainFrame .preorderText .headline {
+  font-size: 21px;
+}
+.preorderPage.v2 .landingFrame .mainFrame .preorderText .titleContainer {
+  display: initial;
+}
+.preorderPage.v2 .landingFrame .mainFrame .preorderText .titleContainer .title .part1 {
+  display: block;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 50px;
+}
+.preorderPage.v2 .landingFrame .mainFrame .preorderText .titleContainer .title .part2 {
+  display: block;
+  margin-left: 0;
+  font-size: 30px;
+  line-height: 20px;
+  text-align: center;
+}
+.preorderPage.v2 .landingFrame .mainFrame .preorderText .boxes {
+  margin-top: 19px;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+.preorderPage.v2 .landingFrame .mainFrame .imageWrapper {
+  background-image: url(/preorder/images/curves.jpg);
+  padding-bottom: 90%;
+  background-size: 100%;
+  margin-top: 14px;
+}
