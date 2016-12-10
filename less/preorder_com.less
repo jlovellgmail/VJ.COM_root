@@ -245,6 +245,136 @@ body {
 //-----------------------------------------------
 //-----------------------------------------------
 //-----------------------------------------------
+// footer
+
+@footerHeight: 86px;
+.footerText {
+	.headerText;
+	color: rgba(0,0,0, .4);
+}
+.footerContainer {
+	background-color: white;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	height: @footerHeight;
+    padding-top: 24px;
+    .footerWidthWrapper {
+    	width: calc(~"100% - 95px - 95px");
+    	height: 100%;
+    	margin: 0 auto;
+    	.topBorder {
+    	}
+		.footerText;
+	    a {
+	    	.footerText;
+	    }
+	    button {
+	    	.footerText;
+	    }
+		.leftFooterColumn {
+			width: auto;
+			position: absolute;
+		    left: 95px;
+		    .socialIcons {
+				img {
+					bottom: 1px;
+					position: relative;
+		    	}
+		    }
+		}
+		.rightFooterColumn {
+			
+			/*
+			width: auto;
+			position: absolute;
+			right: 95px;
+			*/
+
+			position: relative;
+			right: initial;
+			width: 100%;
+			padding-right: 20px;
+
+		}
+		.footerLink {
+			&:hover {
+				color: rgba(0,0,0, .7);
+			}
+		}
+		.socialIcons {
+			color: red;
+			&:hover {
+				color: rgba(0,0,0, .7);
+			}
+		}
+    }
+}
+@media all and (max-width: 1200px) {
+	.footerContainer {
+		.footerWidthWrapper {
+			width: calc(~"100% - 15px - 15px");
+		    text-align: left;
+		    display: block;
+		    height: 100%;
+		    margin: 0 auto;
+		    .leftFooterColumn {
+		    	left: initial;
+		    	margin-left: 20px;
+		    }
+		}
+	}	
+}
+@media all and (max-width: 780px){
+	.footerContainer {
+		height: initial;
+		padding-bottom: 20px;
+		.footerWidthWrapper {
+			width: calc(~"100% - 15px - 15px");
+			margin: 0 auto;
+			text-align: left;
+			.topBorder {
+				height: 1px;
+				border-top: 1px solid rgba(0,0,0, .17);
+				position: relative;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin-bottom: 20px;
+			}
+			.leftFooterColumn {
+				left: initial;
+				position: relative;
+				display: inline-block;
+				margin-left: 20px;
+			}
+			.rightFooterColumn {
+				position: initial;
+				display: block;
+				right: initial;
+				text-align: left;
+				margin-left: 20px;
+			}
+			.footerLinks {
+				display: block;
+				margin-top: 18px;
+				height: initial;
+			    padding-bottom: 20px;
+				li {
+					display: block;
+					margin-top: 10px;
+					.footerLink {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+//-----------------------------------------------
+//-----------------------------------------------
+//-----------------------------------------------
 // Landing page / Preorder page
 
 .preorderPage {
