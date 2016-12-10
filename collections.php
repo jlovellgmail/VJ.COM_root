@@ -12,23 +12,16 @@ include '/classes/Line.class.php';
     <title>Virgil James Collections | Bags, Luxury Handbags & Authentic Handbags</title>
     <meta name="keywords" content="Handbags, bags, bag, Luxury bags, Authentic bags, Designer handbags, Leather bags, Canvas bags, Leather bags for men, Leather bags for women, Canvas bags for men, Canvas bags for women"/>
     <meta name="description" content="Discover our latest luxury bag collections in leather and canvas for men and women."/>
-
     <?php include '/incs/head-links.php'; ?>
     <link rel="stylesheet" href="/css/collections.css">
-    
 </head>
 <body>
     <?php include '/incs/nav.php'; ?>
-
-
-
-
     <div class="preorderPage bg-whiter">
         <div class="landingFrame">
             <div class="mainFrame">
                 <div class="backgroundContainer">
                 </div>
-
                 <div class="contentContainer">
                     <div class="preorderText">
                         <div class="headline">
@@ -70,14 +63,7 @@ include '/classes/Line.class.php';
         </div>
         <?php include "/incs/footer.php"; ?>
     </div>
-
-
-
-
-
     <?php include '/incs/footer.php'; ?>
-    
-    <!-- Common .js Includes -->
     <?php include '/incs/footer-links.php'; ?>
 </body>
 </html>

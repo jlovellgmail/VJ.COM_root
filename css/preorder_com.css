@@ -641,17 +641,6 @@ body {
     height: 50px;
   }
   .preorderPage .landingFrame .mainFrame .imageWrapper {
-    /*
-					display: block;
-					width: 100%;
-					padding-bottom: 120%;
-					height: 0;
-					background-image: url(/preorder/images/tote_hero_whitebg_q7.jpg);
-					background-size: 170%;
-					margin-top: 30px;
-					background-position-x: 53%;
-					background-repeat: no-repeat;
-					*/
     display: none;
   }
   .preorderPage .footerContainer {

@@ -16,24 +16,14 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
         <div class="headerHeightWrapper">
             <div class="logoWrapper">
                 <a class="logoLink" href="preorder/index.php">
-                    
-
                     <img class="navLogo" src="../img_preorder/VJ_logo.svg" alt="Virgil James" />
-
-
                 </a>
             </div>
             <div class="rightItemsContainer">
                 <div class="desktopLinksContainer">
                     <div class="textLinksContainer">
-
-
                         <a class="<?php echo ($page == "collections" ? "active" : "") ?>" href="/index.php">Shop</a>
                         <a class="<?php echo ($page == "about" ? "active" : "") ?>" href="/about.php">About</a>
-
-
-
-
                     </div>
                     <a class="iconWrapper" href="javascript:goToCheckout();">
                         <i class="icon-basket"></i>
@@ -53,33 +43,21 @@ $rootpath = $_SERVER['DOCUMENT_ROOT'];
                 <div class="textLinksContainer">
                     <a class="<?php echo ($page == "collections" ? "active" : "") ?>" href="preorder/index.php">Shop</a>
                     <a class="<?php echo ($page == "about" ? "active" : "") ?>" href="preorder/about.php">About</a>
-
-                    
-                    <!--
-                    <a href="javascript:goToCheckout();">Cart</a>
-                    <a href="preorder/login.php">Account</a>
-                    -->
                     <a class="iconWrapper" href="javascript:goToCheckout();">
                         <i class="icon-basket"></i>
                     </a>           
                     <a class="iconWrapper" href="preorder/login.php">
                         <i class="icon-torso"></i>
                     </a>
-
-
                 </div>
             </div>
         </div>
         <script>
             jQuery(function($){
-
-                //$( '.icon-menu' ).click(function(){
                 $(".burgerContainer").click(function(){
-
                     $('.dropdown').toggleClass('visible');
                     $('.burgerContainer .icon-menu').toggleClass("visible");
                     $(".burgerContainer .icon-cancel").toggleClass("visible");
-
                 });
             });
         </script>
